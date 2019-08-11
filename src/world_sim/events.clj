@@ -59,15 +59,6 @@
      :opt :add
      :func-return tile-updated}))
 
-#_(defn entity-die
-  [world entity-class entity-id _]
-  (let [tile-ref (get-in world [:enviroment :landmasses :pool])]
-    (dosync (ref-set tile-ref (let [entity-tile-id (:tile-id (:location (entity-id @(:pool entity-class))))
-                                    entity-tile (get @tile-ref entity-tile-id)
-                                    entity-tile-updated (conj entity-tile {:taken? false})]
-                                (conj @tile-ref {(:id entity-tile-updated) entity-tile-updated}))))
-    (dosync (ref-set (:pool entity-class) (dissoc @(:pool entity-class) entity-id)))))
-
 (defn entity-grow
   [world entity-class entity-id _]
   (let [entity (entity-id @(:pool entity-class))

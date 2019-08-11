@@ -15,9 +15,9 @@
     (if-not (#{300} i)
       (do
         (Thread/sleep 500)
-        (dosync (ref-set (get-in world [:physics :time]) i))
+        (swap! (fn [] (get-in world [:physics :time])) i)
         (recur (simulate world) (inc i)))
       (do
         (println "done")
         (Thread/sleep 1000)
-        (dosync (ref-set is-running false))))))
+        (swap! is-running (fn [_] false))))))
