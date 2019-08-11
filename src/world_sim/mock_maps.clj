@@ -27,8 +27,8 @@
 
 (def world
   {:gaia            {:trees  {:actions [actions/entity-grow actions/entity-birth actions/entity-death actions/entity-remove]
-                              :pool    {:birch {:pool           (ref {})
-                                                :locks          (ref {})
+                              :pool    {:birch {:pool           (atom {})
+                                                :locks          (atom {})
                                                 :path-key       :birch-tree
                                                 :class-name     :birch
                                                 :base-rot-time  1
@@ -39,8 +39,8 @@
                                                 :birth-max      1000
                                                 :birth-cooldown 10
                                                 :newborn        birch}
-                                        :oak   {:pool           (ref {})
-                                                :locks          (ref {})
+                                        :oak   {:pool           (atom {})
+                                                :locks          (atom {})
                                                 :path-key       :oak-tree
                                                 :class-name     :oak
                                                 :base-rot-time  15
@@ -51,8 +51,8 @@
                                                 :birth-max      1000
                                                 :birth-cooldown 20
                                                 :newborn        oak}
-                                        :elm   {:pool           (ref {})
-                                                :locks          (ref {})
+                                        :elm   {:pool           (atom {})
+                                                :locks          (atom {})
                                                 :path-key       :elm-tree
                                                 :class-name     :elm
                                                 :base-rot-time  3
@@ -65,8 +65,8 @@
                                                 :newborn        elm}}
                               }
                      :plants {:actions []
-                              :pool    {:tulips {:pool           (ref {})
-                                                 :locks          (ref {})
+                              :pool    {:tulips {:pool           (atom {})
+                                                 :locks          (atom {})
                                                  :path-key       :tulip-plant
                                                  :class-name     :tulips
                                                  :base-growth    1
@@ -76,10 +76,10 @@
                                                  :birth-max      1000
                                                  :birth-cooldown 1
                                                  :newborn        birch}}}}
-   :physics         {:time (ref 0)}
+   :physics         {:time (atom 0)}
    :enviroment      {:landmasses {:class-name :landmasses
                                   :tile       tile
-                                  :pool       (ref {})}
+                                  :pool       (atom {})}
                      :mountain   {:pool []}
                      :lakes      {:pool []}
                      :ocean      nil}
@@ -99,7 +99,7 @@
                                              :newborn      horse
                                              :current-goal nil}}}}
    :events          (chan 1024)
-   :system          {:main-running? (ref false)
+   :system          {:main-running? (atom false)
                      :events-done   (agent 0)}})
 
 

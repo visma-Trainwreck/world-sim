@@ -29,14 +29,14 @@
     :else (println condition)))
 
 (defn input [world entity-class entity f res-before]
-  (dosync (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!
-                entity-new (:entity-new result-map)
-                entity-pool (:pool (:entity-class result-map))
-                entity-pool-new (conditional-map-func entity-pool entity-new (:opt result-map))]
-            (if entity-new
-              (ref-set entity-pool entity-pool-new)
-              nil)
-            (:func-return result-map))))
+  (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!
+        entity-new (:entity-new result-map)
+        entity-pool (:pool (:entity-class result-map))
+        entity-pool-new (conditional-map-func entity-pool entity-new (:opt result-map))]
+    (if entity-new
+      (swap! entity-pool (fn [_] entity-pool-new) )
+      nil)
+    (:func-return result-map)))
 
 (defn locate-where
   "Performs a breadth-first recursive search in the nested data structure `m`,
@@ -64,14 +64,14 @@
 
 (defn lock-set
   [ref-locks id actions]
-  (dosync (ref-set ref-locks (let [locks-map (deref ref-locks)
-                                   the-lock (id locks-map)
-                                   thelock-updated (if (nil? the-lock)
-                                                     {:id id :locked-actions {actions true}}
-                                                     {:id             id
-                                                      :locked-actions (conj (:locked-actions the-lock) {actions true})})
-                                   locks-map-updated (assoc-in locks-map [id] thelock-updated)]
-                               locks-map-updated))))
+  (swap! ref-locks (fn [_] (let [locks-map (deref ref-locks)
+                                 the-lock (id locks-map)
+                                 thelock-updated (if (nil? the-lock)
+                                                   {:id id :locked-actions {actions true}}
+                                                   {:id             id
+                                                    :locked-actions (conj (:locked-actions the-lock) {actions true})})
+                                 locks-map-updated (assoc-in locks-map [id] thelock-updated)]
+                             locks-map-updated))))
 
 (defn check-lock
   [lock-map entity-id lock-name]
@@ -87,8 +87,8 @@
 
 (defn release-lock
   [ref-locks id action-name]
-  (dosync (ref-set ref-locks (let [updated-locks (assoc-in @ref-locks [id :locked-actions action-name] false)]
-                               updated-locks))))
+  (swap! ref-locks (fn [_] (let [updated-locks (assoc-in @ref-locks [id :locked-actions action-name] false)]
+                             updated-locks))))
 
 (defn tile-get-neighbours
   [tile-ref tile-id]
@@ -98,7 +98,7 @@
                    (not (= [x y] tile-id)))]
     [x y]))
 
-(defn update-tile
+#_(defn update-tile
   [world tile]
   (let [tiles-ref (get-in world [:enviroment :landmasses :pool])
         tile-updated (conj tile {:taken? true})]
@@ -131,7 +131,7 @@
       (rand-nth tiles)
       tiles)))
 
-(defn xxxxxx
+#_(defn xxxxxx
   [world tiles-ref tile-id]
   ;; an atom in a let binding :S  shucks...
   ;; we are doing something wrong !
