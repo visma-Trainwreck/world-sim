@@ -15,11 +15,11 @@
 (defn gather-events
   [world entity-jack]
   ;; there is a problem here! If the pool in the class only has one tree-class it wont run.
-  (future-start {:start "starter"})
+  #_(future-start {:start "starter"})
   (let [class-list (:pool entity-jack)]
     (doseq [[entity-class-id entity-class] class-list
             action (:actions entity-jack)]
-      (future-start entity-class)
+      #_(future-start entity-class)
       (doseq [[entity-key entity] @(:pool entity-class)
               :let [lock (:locks entity-class)]
               :when (and (tools/check-lock lock entity-key (:name action))
@@ -30,7 +30,7 @@
                                          :action       action
                                          :lock         (:locks entity-class)
                                          :entity-class entity-class})))
-      (future-stop entity-class))))
+      #_(future-stop entity-class))))
 
 (defn start-job
   [world]

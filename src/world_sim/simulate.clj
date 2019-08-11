@@ -49,7 +49,7 @@
                  deref)]
       (if-not (#{500} i)
         (do
-          (Thread/sleep 100)
+          (Thread/sleep 1)
           (dosync (ref-set (get-in world [:physics :time]) i))
           (recur (simulator world) (inc i)))
         (do
@@ -61,3 +61,28 @@
           (clojure.core.async/>!! (:events world) "stopped")
           (clojure.core.async/>!! (:events world) "stopped")
           nil)))))
+
+(defn continue
+  [time]
+  (future
+    (dosync (ref-set (get-in maps/world [:system :main-running?]) true))
+    (start-consumers)
+    (let [target-time (+ @(get-in maps/world [:physics :time]) time)]
+      (loop [world maps/world
+             i (-> world
+                   :physics
+                   :time
+                   deref)]
+        (if-not (#{target-time} i)
+          (do
+            (dosync (ref-set (get-in world [:physics :time]) i))
+            (recur (simulator world) (inc i)))
+          (do
+            (println "done")
+            (Thread/sleep 200)
+            (dosync (ref-set (get-in world [:system :main-running?]) false))
+            (clojure.core.async/>!! (:events world) "stopped")
+            (clojure.core.async/>!! (:events world) "stopped")
+            (clojure.core.async/>!! (:events world) "stopped")
+            (clojure.core.async/>!! (:events world) "stopped")
+            nil))))))
