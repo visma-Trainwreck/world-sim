@@ -1,6 +1,6 @@
 # world_sim
 
-world-simulator... someone write stuff!
+World-simulator... someone write stuff!
 
 ## Usage
 
