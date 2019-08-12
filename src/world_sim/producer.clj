@@ -1,5 +1,6 @@
 (ns world-sim.producer
-  (:require [world-sim.tools :as tools]))
+  (:require [world-sim.tools :as tools]
+            [clojure.core.async :refer [<!! >!!]]))
 
 (defn gather-events
   [world entity-jack]
@@ -19,6 +20,15 @@
                                          :action       action
                                          :lock         (:locks entity-class)
                                          :entity-class entity-class}))))))
+
+(defn get-event-type
+  [world]
+  (let [event-type (<!! (:event-gather-starter world))
+        event-jack-list (event-type (:event-dict world))]))
+
+(defn tester
+  []
+  (future ))
 
 (defn start-job
   [world]

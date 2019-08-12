@@ -5,6 +5,7 @@
             [world-sim.init :as init]
             [clojure.core.async :refer [poll!]]
             [ui.screen :refer [show-window]]))
+
 (defn clean-world
   []
   (let [world maps/world]
@@ -30,9 +31,6 @@
 
 (defn start-consumers
   []
-  #_#_#_(consumer/start-job maps/world)
-  (consumer/start-job maps/world)
-  (consumer/start-job maps/world)
   (consumer/start-job maps/world))
 
 (defn run

@@ -99,6 +99,7 @@
                                              :newborn      horse
                                              :current-goal nil}}}}
    :events          (chan 1024)
+   :event-gather-starter (chan 32)
    :system          {:main-running? (atom false)
                      :events-done   (agent 0)}})
 

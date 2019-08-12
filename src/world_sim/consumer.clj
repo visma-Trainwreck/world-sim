@@ -1,5 +1,6 @@
 (ns world-sim.consumer
-  (:require [world-sim.tools :as tools]))
+  (:require [world-sim.tools :as tools])
+  (:import [java.util.concurrent Executors Future ThreadPoolExecutor ExecutorService]))
 
 (defn execute-events-new
   [world action {:keys [entity-id entity-class]}]
@@ -31,12 +32,12 @@
 
 (defn start-job
   [world]
-  (future
-    (try (println "consumer starter")
-         (let [events-ref (get-in world [:system :events-done])]
-           (while @(get-in world [:system :main-running?])
-             (gather-event world)
-             #_(send events-ref (fn [x] (inc x))))
-           (println "consumer stopped !"))
-         (catch Exception e
-           (println e)))))
+  (try (future (println "consumer starter")
+               (let [events-ref (get-in world [:system :events-done])]
+                 (while @(get-in world [:system :main-running?])
+                   (gather-event world)
+                   #_(send events-ref (fn [x] (inc x))))
+                 (println "consumer stopped !")))
+       (catch Exception e
+         (println e))))
+
