@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e61c451f-b719-46b4-8591-b9f2dc22f69a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/screen.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/screen.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/actions.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/actions.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/consumer.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/consumer.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/events.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/events.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/init.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/init.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/mock_maps.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/mock_maps.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/producer.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/producer.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/simulate.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/simulate.clj" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/default/" />
@@ -17,25 +24,101 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/world_sim/simulate.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/screen.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/producer.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/consumer.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/mock_maps.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/actions.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/events.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/init.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/tools.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>println</find>
       <find>dosync</find>
+      <find>println</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -49,30 +132,32 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/world_sim/actions.clj" />
-        <option value="$PROJECT_DIR$/src/world_sim/mock_maps.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/tools.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/world_loop.clj" />
-        <option value="$PROJECT_DIR$/src/world_sim/producer.clj" />
-        <option value="$PROJECT_DIR$/src/world_sim/events.clj" />
-        <option value="$PROJECT_DIR$/src/world_sim/init.clj" />
-        <option value="$PROJECT_DIR$/src/world_sim/simulate.clj" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/world_sim/actions.clj" />
+        <option value="$PROJECT_DIR$/src/ui/screen.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/events.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/mock_maps.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/consumer.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/init.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/producer.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/simulate.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/a_star.clj" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1750" />
-    <option name="height" value="1105" />
+    <option name="x" value="-24" />
+    <option name="y" value="-23" />
+    <option name="width" value="1943" />
+    <option name="height" value="1103" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,18 +174,13 @@
               <item name="world_sim" type="b2602c69:ProjectViewProjectNode" />
               <item name="world_sim" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="world_sim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="world_sim" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="world_sim" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -108,12 +188,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="cursive.last.file.extension.C\:/Users/peter.l.rasmussen/Documents/project/world_sim/src" value="clj" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="sshConsole" />
   </component>
-  <component name="ReplState" timestamp="1565544461265">{:repl-history {:ide [], :local [{:command &quot;(def peter \&quot;lala\&quot;)&quot;, :offset 16, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond peter\n      \&quot;lele\&quot; true\n      :default false)&quot;, :offset 50, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond peter\n      \&quot;lele\&quot; true)&quot;, :offset 29, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond :ff\n      :ff true)&quot;, :offset 19, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch)&quot;, :offset 56, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref)&quot;, :offset 76, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond\n  (= 1 1) true)&quot;, :offset 20, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond\n  (= 2 1) true)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :enviroment\n    :landmasses\n    :pool\n    deref\n    first)&quot;, :offset 76, :ns &quot;world-sim.simulate&quot;} {:command &quot;(show)&quot;, :offset 5, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world maps/world)&quot;, :offset 22, :ns &quot;world-sim.simulate&quot;} {:command &quot;(:tile-id (:location ( @(:pool (-&gt; maps/world\n                                            :gaia\n                                            :trees\n                                   :pool\n                                   :birch)))))&quot;, :offset 22, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref\n    first)&quot;, :offset 86, :ns &quot;world-sim.simulate&quot;} {:command &quot;(sho)&quot;, :offset 4} {:command &quot;(clean-world)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(run)&quot;, :offset 4, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 500)&quot;, :offset 13, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 3)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 1500)&quot;, :offset 14, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :physics\n    :time\n    deref)&quot;, :offset 47, :ns &quot;world-sim.simulate&quot;} {:command &quot;(show-window)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1566091846232">{:repl-history {:ide [], :local [{:command &quot;(def peter \&quot;lala\&quot;)&quot;, :offset 16, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond peter\n      \&quot;lele\&quot; true\n      :default false)&quot;, :offset 50, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond peter\n      \&quot;lele\&quot; true)&quot;, :offset 29, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond :ff\n      :ff true)&quot;, :offset 19, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch)&quot;, :offset 56, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref)&quot;, :offset 76, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond\n  (= 1 1) true)&quot;, :offset 20, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond\n  (= 2 1) true)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :enviroment\n    :landmasses\n    :pool\n    deref\n    first)&quot;, :offset 76, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world maps/world)&quot;, :offset 22, :ns &quot;world-sim.simulate&quot;} {:command &quot;(:tile-id (:location ( @(:pool (-&gt; maps/world\n                                            :gaia\n                                            :trees\n                                   :pool\n                                   :birch)))))&quot;, :offset 22, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref\n    first)&quot;, :offset 86, :ns &quot;world-sim.simulate&quot;} {:command &quot;(sho)&quot;, :offset 4} {:command &quot;(clean-world)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 500)&quot;, :offset 13, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 3)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 1500)&quot;, :offset 14, :ns &quot;world-sim.simulate&quot;} {:command &quot;run&quot;, :offset 3, :ns &quot;world-sim.simulate&quot;} {:command &quot;(swap! (get-in maps/world [:system :main-running?]) (fn [_] false))&quot;, :offset 20, :ns &quot;world-sim.simulate&quot;} {:command &quot;(clojure.core.async/&gt;!! (:events maps/world) \&quot;stopped\&quot;)&quot;, :offset 38, :ns &quot;world-sim.simulate&quot;} {:command &quot;(mod 0 3)&quot;, :offset 8, :ns &quot;world-sim.producer&quot;} {:command &quot;(def jacks (get-in world [:gaia :trees :pool]))&quot;, :offset 47, :ns &quot;world-sim.mock-maps&quot;} {:command &quot;(def jacks (get-in world [:gaia :trees]))&quot;, :offset 41, :ns &quot;world-sim.mock-maps&quot;} {:command &quot;(put-event-jacks maps/world)&quot;, :offset 27, :ns &quot;world-sim.producer&quot;} {:command &quot;(&lt;!! (:event-gather-starter maps/world))&quot;, :offset 4, :ns &quot;world-sim.producer&quot;} {:command &quot;(doseq [x (range 3)]\n  (println x))&quot;, :offset 33, :ns &quot;world-sim.core&quot;} {:command &quot;(show-window\n  )&quot;, :offset 15, :ns &quot;world-sim.simulate&quot;} {:command &quot;(def tester {:name \&quot;peter\&quot;\n             :desciption {:age 3\n                          :dead? true}})&quot;, :offset 97, :ns &quot;world-sim.simulate&quot;} {:command &quot;(assoc-in tester [:descipion :age] 2)&quot;, :offset 36, :ns &quot;world-sim.simulate&quot;} {:command &quot;(assoc-in tester [:desciption :age] 2)&quot;, :offset 19, :ns &quot;world-sim.simulate&quot;} {:command &quot;(def jacks [(get-in world [:gaia :trees])\n            (get-in world [:living-entities :animal])])&quot;, :offset 97, :ns &quot;world-sim.mock-maps&quot;} {:command &quot;(:events maps/world)&quot;, :offset 19, :ns &quot;world-sim.simulate&quot;} {:command &quot;(clojure.core.async/&lt;&lt;! (:events maps/world))&quot;, :offset 23, :ns &quot;world-sim.simulate&quot;} {:command &quot;(clojure.core.async/&lt;!! (:events maps/world))&quot;, :offset 23, :ns &quot;world-sim.simulate&quot;} {:command &quot;(mod 13 1)&quot;, :offset 9, :ns &quot;world-sim.core&quot;} {:command &quot;(show)&quot;, :offset 5, :ns &quot;world-sim.simulate&quot;} {:command &quot;(defn gather-events\n  [world entity-jack]\n  ;; there is a problem here! If the pool in the class only has one tree-class it wont run.\n  (let [class-list (:pool entity-jack)]\n    (println class-list)\n    (doseq [[entity-class-id entity-class] class-list\n            action (:actions entity-jack)]\n      (doseq [[entity-key entity] @(:pool entity-class)\n              :let [lock (:locks entity-class)]\n              :when (and (tools/check-lock lock entity-key (:name action))\n                         ((:condition action) world entity-class entity))]\n        (do\n          (tools/lock-set (:locks entity-class) entity-key (:name action))\n          (tools/events-queue-add world {:entity-id    entity-key\n                                         :action       action\n                                         :lock         (:locks entity-class)\n                                         :entity-class entity-class}))))))&quot;, :offset 916, :ns &quot;world-sim.producer&quot;} {:command &quot;(defn gather-events\n  [world entity-jack]\n  ;; there is a problem here! If the pool in the class only has one tree-class it wont run.\n  (println \&quot;her!\&quot;)\n  (let [class-list (:pool entity-jack)]\n    (doseq [[entity-class-id entity-class] class-list\n            action (:actions entity-jack)]\n      (doseq [[entity-key entity] @(:pool entity-class)\n              :let [lock (:locks entity-class)]\n              :when (and (tools/check-lock lock entity-key (:name action))\n                         ((:condition action) world entity-class entity))]\n        (do\n          (tools/lock-set (:locks entity-class) entity-key (:name action))\n          (tools/events-queue-add world {:entity-id    entity-key\n                                         :action       action\n                                         :lock         (:locks entity-class)\n                                         :entity-class entity-class}))))))&quot;, :offset 910, :ns &quot;world-sim.producer&quot;} {:command &quot;hello&quot;, :offset 5, :ns &quot;world-sim.producer&quot;} {:command &quot;(swap! (get-in maps/world [:system :main-running?]) (fn [_] true))&quot;, :offset 20, :ns &quot;world-sim.producer&quot;} {:command &quot;(producer-start-job maps/world 2)&quot;, :offset 32, :ns &quot;world-sim.producer&quot;} {:command &quot;(+ 1 1)&quot;, :offset 6, :ns &quot;world-sim.producer&quot;} {:command &quot;(defn run\n  []\n  (future\n    (let [world maps/world]\n      (clean-world)                                         ;;just for repl when run multiple times\n      (swap! (get-in world [:system :main-running?]) (fn [_] true))\n      (start-consumers world)\n      (start-producers world))\n    (println \&quot;before loop!\&quot;)\n    (loop [world (init-world maps/world)\n           i (-&gt; world\n                 :physics\n                 :time\n                 deref)]\n      (if-not (#{500} i)\n        (do\n          (Thread/sleep 1)\n          (swap! (get-in world [:physics :time]) (fn [_] i))\n          (println \&quot;finale!\&quot;)\n          (recur (producer/put-event-jacks world) (inc i)))\n        (do\n          (println \&quot;done\&quot;)\n          (Thread/sleep 200)\n          (swap! (get-in world [:system :main-running?]) (fn [_] false))\n          (clojure.core.async/&gt;!! (:events world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:events world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:events world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:events world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:event-gather-starter world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:event-gather-starter world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:event-gather-starter world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:event-gather-starter world) \&quot;stopped\&quot;)\n          nil)))))&quot;, :offset 1367, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :physics\n    :time\n    deref)&quot;, :offset 9, :ns &quot;world-sim.simulate&quot;} {:command &quot;(type world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; world\n    :physics\n    :time\n    deref)&quot;, :offset 4, :ns &quot;world-sim.simulate&quot;} {:command &quot;(clojure.core.async/&gt;!! (:event-gather-starter world) \&quot;stopped\&quot;)&quot;, :offset 64, :ns &quot;world-sim.simulate&quot;} {:command &quot;(clojure.core.async/&lt;!!(:event-gather-starter world))&quot;, :offset 23, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; world\n    :living-entities\n    :animal\n    :pool)&quot;, :offset 52, :ns &quot;world-sim.simulate&quot;} {:command &quot;(defn run\n  []\n  (future\n    (clean-world)                                           ;;just for repl when run multiple times\n    (swap! (get-in world [:system :main-running?]) (fn [_] true))\n    (start-consumers world)\n    (start-producers world)\n    (init-world world)\n    (loop [i (-&gt; world\n                 :physics\n                 :time\n                 deref)]\n      (if-not (#{50} i)\n        (do\n          (Thread/sleep 100)\n          (swap! (get-in world [:physics :time]) (fn [_] i))\n          (producer/put-event-jacks world)\n          (recur (inc i)))\n        (do\n          (println \&quot;done\&quot;)\n          (Thread/sleep 200)\n          (swap! (get-in world [:system :main-running?]) (fn [_] false))\n          (clojure.core.async/&gt;!! (:events world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:events world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:events world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:events world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:event-gather-starter world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:event-gather-starter world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:event-gather-starter world) \&quot;stopped\&quot;)\n          (clojure.core.async/&gt;!! (:event-gather-starter world) \&quot;stopped\&quot;)\n          nil)))))&quot;, :offset 1266, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; world\n    :living-entities\n    :animal\n    :pool\n    :horse)&quot;, :offset 63, :ns &quot;world-sim.simulate&quot;} {:command &quot;(show-window)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(run)&quot;, :offset 4, :ns &quot;world-sim.simulate&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -170,7 +251,12 @@
       <workItem from="1565115362756" duration="3240000" />
       <workItem from="1565164004215" duration="61000" />
       <workItem from="1565200890257" duration="5367000" />
-      <workItem from="1565540060014" duration="4255000" />
+      <workItem from="1565540060014" duration="11711000" />
+      <workItem from="1565685420108" duration="96000" />
+      <workItem from="1565714252781" duration="3657000" />
+      <workItem from="1565848416534" duration="1595000" />
+      <workItem from="1565871612176" duration="1852000" />
+      <workItem from="1566087256607" duration="4586000" />
     </task>
     <task id="LOCAL-00001" summary="first commit ??">
       <created>1565368262944</created>
@@ -193,17 +279,31 @@
       <option name="project" value="LOCAL" />
       <updated>1565543829882</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test commit">
+      <created>1565544472055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565544472055</updated>
+    </task>
+    <task id="LOCAL-00005" summary="thread work added. event gathering update started.">
+      <created>1565571906551</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565571906551</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12923000" />
+    <option name="totallyTimeSpent" value="32165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533602" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13440861" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -219,11 +319,13 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32954547" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32954547" />
+      <window_info anchor="bottom" id="SVN Repositories" order="14" visible="true" weight="0.23387097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -233,7 +335,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="REPL" order="9" side_tool="true" visible="true" weight="0.2782258" />
+      <window_info anchor="right" id="REPL" order="9" side_tool="true" visible="true" weight="0.3669355" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,76 +345,15 @@
     <MESSAGE value="first commit ??" />
     <MESSAGE value="updated readme&#10;minor hardcoded changes" />
     <MESSAGE value="all refs converted to atoms&#10;cleaned up a lot unused code" />
-    <option name="LAST_COMMIT_MESSAGE" value="all refs converted to atoms&#10;cleaned up a lot unused code" />
+    <MESSAGE value="test commit" />
+    <MESSAGE value="thread work added. event gathering update started." />
+    <option name="LAST_COMMIT_MESSAGE" value="thread work added. event gathering update started." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/world_sim/consumer.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/actions.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/screen.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/mock_maps.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/tools.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/world_sim/world_loop.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/producer.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/events.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/init.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1042">
-          <caret line="129" column="65" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/simulate.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="64" column="14" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -323,6 +364,79 @@
             <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10285">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/screen.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/actions.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/tools.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/consumer.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/mock_maps.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/events.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="79" column="16" lean-forward="true" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/init.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/producer.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/a_star.clj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/simulate.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
         </state>
       </provider>
     </entry>

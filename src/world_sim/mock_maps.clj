@@ -27,6 +27,7 @@
 
 (def world
   {:gaia            {:trees  {:actions [actions/entity-grow actions/entity-birth actions/entity-death actions/entity-remove]
+                              :time-divisor 12
                               :pool    {:birch {:pool           (atom {})
                                                 :locks          (atom {})
                                                 :path-key       :birch-tree
@@ -86,9 +87,10 @@
    :living-entities {:human  {:pool          []
                               :base-growth   1
                               :base-lifespan 1}
-                     :animal {:actions [actions/entity-grow actions/entity-birth actions/entity-death]
-                              :pool {:horse {:pool         []
-                                             :locks        []
+                     :animal {:actions [actions/entity-move]
+                              :time-divisor 1
+                              :pool {:horse {:pool         (atom {})
+                                             :locks        (atom {})
                                              :class-name     :horse
                                              :base-growth    1
                                              :base-size      10
@@ -97,11 +99,14 @@
                                              :birth-max      1000
                                              :birth-cooldown 1
                                              :newborn      horse
-                                             :current-goal nil}}}}
+                                             :plan {:current-direction [1 0]}}}}}
    :events          (chan 1024)
-   :event-gather-starter (chan 32)
+   :event-gather-starter (chan 1024)
    :system          {:main-running? (atom false)
                      :events-done   (agent 0)}})
+
+(def jacks [#_(get-in world [:gaia :trees])
+            (get-in world [:living-entities :animal])])
 
 
 

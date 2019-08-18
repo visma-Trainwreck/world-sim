@@ -19,24 +19,21 @@
   (let [tiles (get-in maps/world [:landmasses :enviroment :pool])
         trees-birch @(get-in maps/world [:gaia :trees :pool :birch :pool])
         trees-oak @(get-in maps/world [:gaia :trees :pool :oak :pool])
-        tree-elm @(get-in maps/world [:gaia :trees :pool :elm :pool])]
+        tree-elm @(get-in maps/world [:gaia :trees :pool :elm :pool])
+        animals @(get-in maps/world [:living-entities :animal :pool :horse :pool])]
          (q/fill 255 255 255)
          (q/text-size 50)
          (q/text (str "year: " @(get-in maps/world [:physics :time])) 2100 90)
          (q/text (str "framerate: " (q/current-frame-rate)) 2100 200)
-         #_(doseq [[key tile] tiles]
-             (let [x (* 20 (:x tile))
-                   y (* 20 (:y tile))]
-               (if (:taken? tile)
-                 (q/fill 50 70 90)
-                 (q/fill 105 130 220))
 
-               (q/rect x y 20 20)))
-         #_(doseq [[key tile] tiles]
-             (let [x (:x tile)
-                   y (:y tile)]
-               (q/fill 100 255 100)
-               (q/rect (* 20 x) (* 20 y) 20 20)))
+         (doseq [[key animal] animals]
+           (let [x (get-in animal [:location :x])
+                 y (get-in animal [:location :y])]
+             (if (:death-date animal)
+               (q/fill 150 150 150)
+               (q/fill 255 100 100))
+             (q/rect (* size x) (* size y) size size)))
+
          (doseq [[key tree] trees-birch]
              (let [x (get-in tree [:location :x])
                    y (get-in tree [:location :y])]

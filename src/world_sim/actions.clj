@@ -36,6 +36,11 @@
                     (> max-size entity-size))))
    :events    [events/entity-grow]})
 
+(def entity-move
+  {:name :move
+   :condition (fn [_ _ _] true)
+   :events [events/entity-relocate]})
+
 (def entity-remove
   {:name      :remove
    :condition (fn [world entity-class entity]

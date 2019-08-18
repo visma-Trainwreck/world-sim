@@ -21,6 +21,17 @@
       (swap! entity-pool (fn [_] entity-pool-updated))))
   world)
 
+(defn animal-populate
+  [world]
+  (let [horse-class (get-in world [:living-entities :animal :pool :horse])
+        horse-pool (:pool horse-class)
+        horse (:newborn horse-class)
+        horse-updated (-> horse
+                          (conj {:id (keyword (tools/id-creater))})
+                          (assoc-in [:location] {:x 20 :y 20 :tile-id [20 20]})
+                          (assoc-in [:plan :current-direction] [1 0]))]
+    (swap! horse-pool (fn [pool] (conj pool {(:id horse-updated) horse-updated})))))
+
 (def cpu-count (atom 0))
 (def map-agent (agent {}))
 #_(def amount-since-last (atom 0))
@@ -83,7 +94,7 @@
   [world]
   (let [new-world (-> world
                       create-tile-map
-                      #_neighbours-fill
-                      test-tree-populate)]
+                      animal-populate
+                      #_test-tree-populate)]
     (println "world inititated")
     new-world))
