@@ -70,6 +70,19 @@
      :opt :add
      :func-return entity-new}))
 
+(defn entity-relocate
+  [world entity-class entity-id _]
+  (let [entity (entity-id @(:pool entity-class))
+        current-loc (:location entity)
+        current-dir (get-in entity [:plan :current-direction])
+        updated-loc (conj current-loc {:x (+ (first current-dir) (:x current-loc))
+                                       :y (+ (second current-dir) (:y current-loc))})
+        entity-new (assoc-in entity [:location] updated-loc)]
+    {:entity-class entity-class
+     :entity-new entity-new
+     :opt :add
+     :func-return entity-new}))
+
 (defn entity-remove
   [_ entity-class entity _]
   [entity-class entity :remove]
