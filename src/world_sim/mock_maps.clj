@@ -105,7 +105,7 @@
    :system          {:main-running? (atom false)
                      :events-done   (agent 0)}})
 
-(def jacks [#_(get-in world [:gaia :trees])
+(def jacks [(get-in world [:gaia :trees])
             (get-in world [:living-entities :animal])])
 
 

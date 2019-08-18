@@ -30,7 +30,8 @@
                           (conj {:id (keyword (tools/id-creater))})
                           (assoc-in [:location] {:x 20 :y 20 :tile-id [20 20]})
                           (assoc-in [:plan :current-direction] [1 0]))]
-    (swap! horse-pool (fn [pool] (conj pool {(:id horse-updated) horse-updated})))))
+    (swap! horse-pool (fn [pool] (conj pool {(:id horse-updated) horse-updated})))
+    world))
 
 (def cpu-count (atom 0))
 (def map-agent (agent {}))
@@ -95,6 +96,6 @@
   (let [new-world (-> world
                       create-tile-map
                       animal-populate
-                      #_test-tree-populate)]
+                      test-tree-populate)]
     (println "world inititated")
     new-world))

@@ -20,7 +20,7 @@
                                          :lock         (:locks entity-class)
                                          :entity-class entity-class}))))))
 
-(defn gather-events-test
+#_(defn gather-events-test
   [world entity-jack]
   ;; there is a problem here! If the pool in the class only has one tree-class it wont run.
   (let [class-list (:pool entity-jack)]
@@ -50,7 +50,7 @@
   [world]
   (while @(get-in world [:system :main-running?])
     (->> (<!! (:event-gather-starter world))
-        (gather-events-test world))))
+        (gather-events world))))
 
 (defn producer-start-job
   [world amount]
