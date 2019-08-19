@@ -28,7 +28,8 @@
 
 (defn init-world
   [world]
-  (init/ini-start world))
+  (init/ini-start world)
+  nil)
 
 (defn start-consumers
   [world]

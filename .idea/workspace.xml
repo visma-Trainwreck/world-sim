@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e61c451f-b719-46b4-8591-b9f2dc22f69a" name="Default Changelist" comment="" />
+    <list default="true" id="e61c451f-b719-46b4-8591-b9f2dc22f69a" name="Default Changelist" comment="git ignore update">
+      <change afterPath="$PROJECT_DIR$/src/path_finder/a_star.clj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/path_finder/tools.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/init.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/init.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/mock_maps.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/mock_maps.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/simulate.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/simulate.clj" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/default/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +21,60 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/simulate.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/path_finder/a_star.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="65" column="47" lean-forward="true" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/path_finder/tools.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/mock_maps.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="81" column="28" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/init.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Clojure Namespace" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -23,6 +83,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -30,24 +95,31 @@
         <option value="$PROJECT_DIR$/src/world_sim/actions.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/tools.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/events.clj" />
-        <option value="$PROJECT_DIR$/src/world_sim/mock_maps.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/producer.clj" />
-        <option value="$PROJECT_DIR$/src/world_sim/simulate.clj" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/world_sim/a_star.clj" />
+        <option value="$PROJECT_DIR$/src/path_finder/tools.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/mock_maps.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/init.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/simulate.clj" />
+        <option value="$PROJECT_DIR$/src/path_finder/a_star.clj" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1750" />
-    <option name="height" value="1105" />
+    <option name="width" value="2580" />
+    <option name="height" value="1410" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -76,20 +148,24 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="cursive.last.file.extension.C\:/Users/peter.l.rasmussen/Documents/project/world_sim/src" value="clj" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="sshConsole" />
   </component>
-  <component name="ReplState" timestamp="1566092497778">{:repl-history {:ide [], :local [{:command &quot;(def peter \&quot;lala\&quot;)&quot;, :offset 16, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond peter\n      \&quot;lele\&quot; true\n      :default false)&quot;, :offset 50, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond peter\n      \&quot;lele\&quot; true)&quot;, :offset 29, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond :ff\n      :ff true)&quot;, :offset 19, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch)&quot;, :offset 56, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref)&quot;, :offset 76, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond\n  (= 1 1) true)&quot;, :offset 20, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond\n  (= 2 1) true)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :enviroment\n    :landmasses\n    :pool\n    deref\n    first)&quot;, :offset 76, :ns &quot;world-sim.simulate&quot;} {:command &quot;(show)&quot;, :offset 5, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world maps/world)&quot;, :offset 22, :ns &quot;world-sim.simulate&quot;} {:command &quot;(:tile-id (:location ( @(:pool (-&gt; maps/world\n                                            :gaia\n                                            :trees\n                                   :pool\n                                   :birch)))))&quot;, :offset 22, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref\n    first)&quot;, :offset 86, :ns &quot;world-sim.simulate&quot;} {:command &quot;(sho)&quot;, :offset 4} {:command &quot;(clean-world)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(run)&quot;, :offset 4, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 500)&quot;, :offset 13, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 3)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 1500)&quot;, :offset 14, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :physics\n    :time\n    deref)&quot;, :offset 47, :ns &quot;world-sim.simulate&quot;} {:command &quot;(show-window)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;}], :remote []}}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\peter.l.rasmussen\Documents\project\world_sim\src\path_finder" />
+    </key>
+  </component>
+  <component name="ReplState" timestamp="1566237159166">{:repl-history {:ide [], :local [{:command &quot;(def peter \&quot;lala\&quot;)&quot;, :offset 16, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond peter\n      \&quot;lele\&quot; true\n      :default false)&quot;, :offset 50, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond peter\n      \&quot;lele\&quot; true)&quot;, :offset 29, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond :ff\n      :ff true)&quot;, :offset 19, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch)&quot;, :offset 56, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref)&quot;, :offset 76, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond\n  (= 1 1) true)&quot;, :offset 20, :ns &quot;world-sim.simulate&quot;} {:command &quot;(cond\n  (= 2 1) true)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :enviroment\n    :landmasses\n    :pool\n    deref\n    first)&quot;, :offset 76, :ns &quot;world-sim.simulate&quot;} {:command &quot;(show)&quot;, :offset 5, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world maps/world)&quot;, :offset 22, :ns &quot;world-sim.simulate&quot;} {:command &quot;(:tile-id (:location ( @(:pool (-&gt; maps/world\n                                            :gaia\n                                            :trees\n                                   :pool\n                                   :birch)))))&quot;, :offset 22, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref\n    first)&quot;, :offset 86, :ns &quot;world-sim.simulate&quot;} {:command &quot;(sho)&quot;, :offset 4} {:command &quot;(clean-world)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(run)&quot;, :offset 4, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 500)&quot;, :offset 13, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 3)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(continue 1500)&quot;, :offset 14, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :physics\n    :time\n    deref)&quot;, :offset 47, :ns &quot;world-sim.simulate&quot;} {:command &quot;(show-window)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(defn distance\n  [start end]\n\n  (+ (Math/abs ^Integer (- (first start) (first end)))\n     (Math/abs ^Integer (- (second start) (second end)))))&quot;, :offset 143, :ns &quot;world-sim.a-star&quot;} {:command &quot;(distance [0 0] [5 5])&quot;, :offset 20, :ns &quot;world-sim.a-star&quot;} {:command &quot;(distance [0 0] [5 10])&quot;, :offset 21, :ns &quot;world-sim.a-star&quot;} {:command &quot;(distance [0 0] [1 0])&quot;, :offset 20, :ns &quot;world-sim.a-star&quot;} {:command &quot;(distance [0 0] [1 1])&quot;, :offset 20, :ns &quot;world-sim.a-star&quot;} {:command &quot;(get-path [0 0] [1 3])&quot;, :offset 20, :ns &quot;world-sim.a-star&quot;} {:command &quot;(search [[0 0 0 0 0 0 0]\n         [0 0 0 1 0 0 0]\n         [0 0 0 1 0 0 0]\n         [0 0 0 1 0 0 0]\n         [0 0 0 0 0 0 0]] [0 0] [6 4])&quot;, :offset 136, :ns &quot;world-sim.a-star&quot;} {:command &quot;(tester [0 0] [2 2])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn tester\n  [start end]\n  (let [tile-map-ref (get-in world [:enviroment :landmasses :pool])\n        [xs ys] start\n        [xe ye] end]\n    (for [x (range xs xe)]\n      (for [y (range ys ye)]\n        [x y]))))&quot;, :offset 211, :ns &quot;path-finder.tools&quot;} {:command &quot;(tester [0 0] [5 5])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn tester\n  [start end]\n  (let [tile-map-ref (get-in world [:enviroment :landmasses :pool])\n        [xs ys] start\n        [xe ye] end]\n    (for [x (range xs xe)]\n      (for [y (range ys ye)]\n        (if (:taken? (get @tile-map-ref [x y]))\n          1\n          0)))))&quot;, :offset 270, :ns &quot;path-finder.tools&quot;} {:command &quot;(tester [0 0] [5 3])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn create-tile-map\n  [world]\n  (println \&quot;creating tilemap\&quot;)\n  #_(future (amout-job))\n  (swap! (get-in world [:enviroment :landmasses :pool]) (fn [_] {}))\n  (let [tile (get-in world [:enviroment :landmasses :tile])]\n    (doseq [i (range 5)\n            j (range 5)]\n      #_(while (&gt; @cpu-count 16))\n      (do\n        #_(swap! cpu-count #(+ % 1))\n        (let [id [i j]\n              new-tile (conj tile {:id id :x i :y j})]\n          (send map-agent (fn [old-map] (conj old-map {(:id new-tile) new-tile}))))\n        #_(swap! cpu-count #(- % 1))\n        #_(swap! amount-since-last inc))))\n  #_(if (&gt; @cpu-count 1)\n    (do (Thread/sleep 5000)\n        (println \&quot;waiting for threads \&quot; @cpu-count)))\n  (Thread/sleep 2000)                                       ;; making sure the agent proccessed all its messages\n  (swap! (get-in world [:enviroment :landmasses :pool]) (fn [_] @map-agent))\n  (swap! cpu-count (fn [_] 0))\n  world)&quot;, :offset 926, :ns &quot;world-sim.init&quot;} {:command &quot;(tester [0 0] [4 6])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(get-path [0 0] [4 8])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [0 0] [4 3])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 0] [4 3])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(search [[1 0 0]\n         [0 0 0]\n         [0 0 1]\n         [0 0 0]] [0 0] [4 3])&quot;, :offset 79, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [1 0] [4 3])&quot;, :offset 16} {:command &quot;(get-path [1 0] [2 1])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [0 1] [2 1])&quot;, :offset 18, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [0 0] [0 1])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [1 1] [0 1])&quot;, :offset 14, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 0] [4 4])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 0] [5 5])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 0] [5 6])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(-&gt; maps/world\n    :enviroment\n    :landmasses\n    :pool\n    deref)&quot;, :offset 66, :ns &quot;path-finder.a-star&quot;} {:command &quot;(defn tester\n  [start end]\n  (let [tile-map-ref (get-in world [:enviroment :landmasses :pool])\n        [xs ys] start\n        [xe ye] end]\n    (for [x (range xs xe)]\n      (for [y (range ys ye)\n            :let [tile (get @tile-map-ref [x y])]\n            :when tile]\n        (if (:taken? tile)\n          1\n          0)))))&quot;, :offset 322, :ns &quot;path-finder.tools&quot;} {:command &quot;(take)&quot;, :offset 6} {:command &quot;(search [[0 0 0 1 0]\n         [0 0 0 0 0]\n         [0 0 0 0 1]\n         [0 0 0 0 0]\n         [0 1 0 0 0]] [1 0] [3 3])&quot;, :offset 116, :ns &quot;path-finder.a-star&quot;} {:command &quot;(search ((0 0 0 1 0) (0 0 0 0 0) (0 0 0 0 1) (0 0 0 0 0) (0 1 0 0 0)) [1 0] [3 3])&quot;, :offset 69, :ns &quot;path-finder.a-star&quot;} {:command &quot;(search '('(0 0 0 1 0) '(0 0 0 0 0) '(0 0 0 0 1) '(0 0 0 0 0) '(0 1 0 0 0)) [1 0] [3 3])&quot;, :offset 75, :ns &quot;path-finder.a-star&quot;} {:command &quot;(defn tester\n  [start end]\n  (let [tile-map-ref (get-in world [:enviroment :landmasses :pool])\n        [xs ys] start\n        [xe ye] end]\n    (vec (for [x (range xs xe)]\n           (vec (for [y (range ys ye)\n                      :let [tile (get @tile-map-ref [x y])]\n                      :when tile]\n                  (if (:taken? tile)\n                    1\n                    0)))))))&quot;, :offset 389, :ns &quot;path-finder.tools&quot;} {:command &quot;(tools/tester [0 0] [5 8])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(search [[0 0 0] [0 0 0] [0 0 0]] [0 0] [3 3])&quot;, :offset 44, :ns &quot;path-finder.a-star&quot;} {:command &quot;(search [[0 0 0] \n         [0 0 0] \n         [0 0 0]] [0 0] [3 3])&quot;, :offset 45, :ns &quot;path-finder.a-star&quot;} {:command &quot;(search [[0 0 0 0] \n         [0 0 0 0] \n         [0 0 0 0]\n         [0 0 0 0]] [0 0] [3 3])&quot;, :offset 76, :ns &quot;path-finder.a-star&quot;} {:command &quot;(range 0 3)&quot;, :offset 10, :ns &quot;path-finder.a-star&quot;} {:command &quot;(defn tester\n  [start end]\n  (let [tile-map-ref (get-in world [:enviroment :landmasses :pool])\n        [xs ys] start\n        [xe ye] end]\n    (vec (for [x (range xs (+ 1 xe))]\n           (vec (for [y (range ys (+ 1 ye))\n                      :let [tile (get @tile-map-ref [x y])]\n                      :when tile]\n                  (if (:taken? tile)\n                    1\n                    0)))))))&quot;, :offset 401, :ns &quot;path-finder.tools&quot;} {:command &quot;(tools/tester [0 0] [3 3])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(search [[0 0 0 1] [0 0 0 0] [0 0 0 0] [0 0 0 0]] [0 0] [3 3])&quot;, :offset 60, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [1 0] [3 3])&quot;, :offset 12, :ns &quot;path-finder.a-star&quot;} {:command &quot;(search [[0 0 1] [0 0 0] [0 0 0] [0 0 0]] [0 1] [3 3])&quot;, :offset 52, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 1] [3 3])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(def my-test (tools/tester [0 1] [3 3]))&quot;, :offset 12, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count my-test)&quot;, :offset 14, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 1] [3 5])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 1] [2 5])&quot;, :offset 22, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count [0 0 0])&quot;, :offset 6, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count [[0 0 1 0] [0 0 0 0] [0 0 0 1]])&quot;, :offset 38, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count (first [[0 0 1 0] [0 0 0 0] [0 0 0 1]]))&quot;, :offset 6, :ns &quot;path-finder.a-star&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&lt; xs xe) [xe xs] [xs xe])\n        range-y (if (&lt; ys ye) [ye ys] [ys ye])]\n    [range-x range-y]))&quot;, :offset 193, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&gt; xs xe) [xe xs] [xs xe])\n        range-y (if (&gt; ys ye) [ye ys] [ys ye])]\n    [range-x range-y]))&quot;, :offset 193, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 0] [5 5])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [5 5] [0 0])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(range [1 4])&quot;, :offset 11, :ns &quot;path-finder.tools&quot;} {:command &quot;(range 3 4)&quot;, :offset 10, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn tester\n  [start end]\n  (let [tile-map-ref (get-in world [:enviroment :landmasses :pool])\n        [xs ys] start\n        [xe ye] end\n        [[xstart xend] range-x [ystart yend] range-y] (range-finder start end)]\n    (vec (for [x (range xs (+ 1 xe))]\n           (vec (for [y (range ys (+ 1 ye))\n                      :let [tile (get @tile-map-ref [x y])]\n                      :when tile]\n                  (if (:taken? tile)\n                    1\n                    0)))))))&quot;, :offset 480, :ns &quot;path-finder.tools&quot;} {:command &quot;(tester [0 0] [3 3])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&gt; xs xe) {:range-x [xe (+ 1 xs)]\n                               :point-h :right}\n                              {:range-x [xs (+ 1 xe)]\n                               :point-h :left})\n\n        range-y (if (&gt; ys ye) {:range-y [ye (+ 1 ys)]\n                               :point-v :down}\n                              {:range-y [ys (+ 1 ye)]\n                               :point-v :up})]\n    (conj range-x range-y)))&quot;, :offset 510, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 0] [3 3])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 3] [3 1])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(&gt; 0 3)&quot;, :offset 6, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&gt; xs xe) {:range-x [xe (+ 1 xs)]\n                               :point-h :right}\n                              {:range-x [xs (+ 1 xe)]\n                               :point-h :left})\n\n        range-y (if (&gt; ys ye) {:range-y [ye (+ 1 ys)]\n                               :point-v :up}\n                              {:range-y [ys (+ 1 ye)]\n                               :point-v :down})]\n    (conj range-x range-y)))&quot;, :offset 510, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 0] [3 1])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(get-path [0 0] [3 4])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [0 0] [3 3])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;@(get-in world [:enviroment :landmasses :pool])&quot;, :offset 47, :ns &quot;path-finder.a-star&quot;} {:command &quot;(init-world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(get @(get-in world [:enviroment :landmasses :pool]) [3 4])&quot;, :offset 57, :ns &quot;path-finder.a-star&quot;} {:command &quot;e&quot;, :offset 1, :ns &quot;path-finder.a-star&quot;} {:command &quot;(def tester {[0 0] {:name \&quot;peter\&quot;}\n             [2 3] {:name \&quot;grethe\&quot;}})&quot;, :offset 68, :ns &quot;path-finder.a-star&quot;} {:command &quot;(keys tester)&quot;, :offset 0, :ns &quot;path-finder.a-star&quot;} {:command &quot;(init world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(get-path [1 1] [3 3])&quot;, :offset 19, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [0 0] [4 4])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-in world :physics :world-height)&quot;, :offset 37, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world world)&quot;, :offset 17, :ns &quot;world-sim.simulate&quot;} {:command &quot;(get-path [0 0] [455 300])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -147,6 +223,8 @@
       <workItem from="1565164004215" duration="61000" />
       <workItem from="1565200890257" duration="5367000" />
       <workItem from="1565540060014" duration="2726000" />
+      <workItem from="1566202498068" duration="5770000" />
+      <workItem from="1566222970365" duration="3387000" />
     </task>
     <task id="LOCAL-00001" summary="first commit ??">
       <created>1565368262944</created>
@@ -155,16 +233,31 @@
       <option name="project" value="LOCAL" />
       <updated>1565368262944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit ??">
+      <created>1566092671673</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566092671673</updated>
+    </task>
+    <task id="LOCAL-00003" summary="git ignore update">
+      <created>1566092727759</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566092727759</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11403000" />
+    <option name="totallyTimeSpent" value="25739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13440861" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1827957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -180,11 +273,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32954547" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.4659091" />
+      <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -194,7 +288,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info active="true" anchor="right" id="REPL" order="9" side_tool="true" visible="true" weight="0.3669355" />
+      <window_info active="true" anchor="right" id="REPL" order="9" side_tool="true" visible="true" weight="0.49327958" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +296,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit ??" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit ??" />
+    <MESSAGE value="git ignore update" />
+    <option name="LAST_COMMIT_MESSAGE" value="git ignore update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/world_sim/producer.clj">
@@ -233,24 +328,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/mock_maps.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/world_sim/tools.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/simulate.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="73" column="24" lean-forward="true" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -268,6 +349,48 @@
             <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/mock_maps.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="81" column="28" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/simulate.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/init.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="46" column="21" lean-forward="true" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/path_finder/a_star.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="47" lean-forward="true" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/path_finder/tools.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
         </state>
       </provider>
     </entry>
