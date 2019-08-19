@@ -43,8 +43,8 @@
   #_(future (amout-job))
   (swap! (get-in world [:enviroment :landmasses :pool]) (fn [_] {}))
   (let [tile (get-in world [:enviroment :landmasses :tile])]
-    (doseq [i (range 100)
-            j (range 100)]
+    (doseq [i (range (get-in world [:physics :world-width]))
+            j (range (get-in world [:physics :world-height]))]
       #_(while (> @cpu-count 16))
       (do
         #_(swap! cpu-count #(+ % 1))
