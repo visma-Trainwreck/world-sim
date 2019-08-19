@@ -1,7 +1,8 @@
 (ns ui.screen
   (:require [quil.core :as q]
             [quil.middleware :as m]
-            [world-sim.mock-maps :as maps]))
+            [world-sim.mock-maps :as maps]
+            [path-finder.a-star :refer [get-path]]))
 
 (defn setup []
   ;tell quil what framerate / speed of the game and color mode, also gives the initialt state of the game.
@@ -12,6 +13,13 @@
     [(* 20 x) (* 20 y)]))
 
 (def size 5)
+
+(defn draw-path
+  []
+  (q/fill 255 255 0)
+  (let [path (get-path [99 2] [5 99])]
+    (doseq [[x y] path]
+      (q/rect (* size x) (* size y) size size))))
 
 (defn draw
   [state]
@@ -56,7 +64,7 @@
                (q/fill 100 100 255))
              (q/rect (* size x) (* size y) size size)))
 
-         )
+         (draw-path))
   #_(q/fill 255 100 100)
   #_(doseq [coords state
           :let [x (first coords)
