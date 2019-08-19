@@ -10,5 +10,9 @@
 
 
 
-
+(def mind-map
+  {:current-goal (fn [world entity-class entity]
+                   (if))
+   :current-path []
+   :calc-goal (fn [world entity-class entity] true)})
 

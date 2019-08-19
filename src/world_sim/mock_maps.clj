@@ -78,8 +78,8 @@
                                                  :birth-cooldown 1
                                                  :newborn        birch}}}}
    :physics         {:time (atom 0)
-                     :world-width 1000
-                     :world-height 1000}
+                     :world-width 100
+                     :world-height 100}
    :enviroment      {:landmasses {:class-name :landmasses
                                   :tile       tile
                                   :pool       (atom {})}

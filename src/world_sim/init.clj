@@ -3,6 +3,7 @@
 
 (defn test-tree-populate
   [world]
+  (println "placing trees")
   (let [tree-pool (get-in world [:gaia :trees :pool])]
     (doseq [[key tree-class] tree-pool
             :let [tiles-pool (get-in world [:enviroment :landmasses :pool])
