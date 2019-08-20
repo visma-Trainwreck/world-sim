@@ -2,7 +2,6 @@
   (:require [world-sim.actions :as actions]
             [clojure.core.async :refer [chan]]))
 
-
 (def birch
   {:id       nil :name "birch" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
    :location {:x nil :y nil :tile-id nil}})
