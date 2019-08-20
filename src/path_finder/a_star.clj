@@ -3,6 +3,9 @@
             [path-finder.tools :as tools]
             [clojure.data.priority-map :refer [priority-map-by]]))
 
+(def width (get-in world [:physics :world-width]))
+(def height (get-in world [:physics :world-height]))
+
 (defn distance
   [start end]
 
@@ -53,9 +56,7 @@
                         (if (< h1 h2) -1 1)
                         (if (< f1 f2) -1 1)))))
                 start (cost start start end))
-         closed {}
-         width  (get-in world [:physics :world-width]) #_(-> map first count dec)
-         height (get-in world [:physics :world-height]) #_(-> map count dec)]
+         closed {}]
      (when (and (not (:taken? (get map [sx sy])))
                 (not (:taken? (get map [ex ey]))))
        (search map width height open closed start end))))
