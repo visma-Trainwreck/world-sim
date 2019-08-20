@@ -19,6 +19,10 @@
   {:id       nil :name "tulip" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
    :location {:x nil :y nil :tile-id nil}})
 
+(def cow
+  {:id       nil :name "cow" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
+   :location {:x nil :y nil :tile-id nil}})
+
 (def horse
   {:id       nil :name "horse" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
    :location {:x nil :y nil :tile-id nil}})
