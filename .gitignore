@@ -1,7 +1,7 @@
 /target
 /classes
 /checkouts
-.idea
+.idea*
 profiles.clj
 pom.xml
 pom.xml.asc
@@ -11,3 +11,4 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
+workspace.xml
