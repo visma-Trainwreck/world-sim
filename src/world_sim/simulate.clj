@@ -47,7 +47,7 @@
                  :physics
                  :time
                  deref)]
-      (if-not (#{400} i)
+      (if-not (#{5} i)
         (do
           (Thread/sleep 50)
           (swap! (get-in world [:physics :time]) (fn [_] i))

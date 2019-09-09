@@ -1,6 +1,8 @@
 (ns world-sim.mock-maps
   (:require [world-sim.actions :as actions]
-            [clojure.core.async :refer [chan]]))
+            [world-sim.actions-walkers :as actions-walkers]
+            [clojure.core.async :refer [chan]]
+            [fsm.behavior :as behavior]))
 
 (def birch
   {:id       nil :name "birch" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
@@ -24,7 +26,10 @@
 
 (def horse
   {:id       nil :name "horse" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
-   :location {:x nil :y nil :tile-id nil}})
+   :location {:x nil :y nil :tile-id nil}
+   :plan {:current-direction [1 0]
+          :current-goal nil}
+   :fsm behavior/ini-state})
 
 (def tile {:id nil :x nil :y nil :taken? false})
 
@@ -92,7 +97,7 @@
    :living-entities {:human  {:pool          []
                               :base-growth   1
                               :base-lifespan 1}
-                     :animal {:actions [actions/entity-move]
+                     :animal {:actions [actions-walkers/entity-fsm]
                               :time-divisor 1
                               :pool {:horse {:pool         (atom {})
                                              :locks        (atom {})
@@ -104,7 +109,18 @@
                                              :birth-max      1000
                                              :birth-cooldown 1
                                              :newborn      horse
-                                             :plan {:current-direction [1 0]}}}}}
+                                             :plan {:current-direction [1 0]}}
+                                     :cow {:pool         (atom {})
+                                           :locks        (atom {})
+                                           :class-name     :cow
+                                           :base-growth    1
+                                           :base-size      10
+                                           :base-lifespan  40
+                                           :birth-min      1
+                                           :birth-max      1000
+                                           :birth-cooldown 1
+                                           :newborn      cow
+                                           :plan {:current-direction [1 0]}}}}}
    :events          (chan 1024)
    :event-gather-starter (chan 1024)
    :system          {:main-running? (atom false)

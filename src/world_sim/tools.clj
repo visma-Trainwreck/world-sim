@@ -26,7 +26,7 @@
   (cond
     (= condition :add) (conj @entity-pool {(:id entity) entity})
     (= condition :remove) (dissoc @entity-pool entity)
-    :else (println condition)))
+    :else (println "condition was not found for entity " entity " condition: " condition)))
 
 (defn input [world entity-class entity f res-before]
   (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!

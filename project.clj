@@ -5,7 +5,8 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [org.clojure/core.async "0.4.474"]
-                 [quil "2.8.0"]]
+                 [quil "2.8.0"]
+                 [metosin/tilakone "0.0.4"]]
   :main ^:skip-aot world-sim.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
