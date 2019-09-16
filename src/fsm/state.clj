@@ -50,7 +50,7 @@
 (def test-me
   [{::tk/name        :choice-handle
     ::tk/transitions [{::tk/to      :sleep
-                       ::tk/on      ""
+                       ::tk/on      _
                        ::tk/actions []}
                       {::tk/to :eat
                        ::tk/on ""}
@@ -62,9 +62,11 @@
     ::tk/transitions [{::tk/to      :choice-handle
                        ::tk/on      ""
                        ::tk/actions []}]
-    ::tk/enter       {::tk/guards  [(fn [ctx] (if (get-in ctx [::tk/process :stats :tired?])
-                                                true
-                                                false))]
+    ::tk/enter       {::tk/guards  [(fn [{::tk/keys [signal] :as ctx}]
+                                      (if (= signal "s")
+                                        (do (println "not allowed!")
+                                            true)
+                                        false))]
                       ::tk/actions [(fn [m] (println "zzzzzzzzzzzzz")
                                       (lie-down m))]}
     ::tk/leave       {::tk/actions [(fn [m] (println "waking up!")
@@ -87,14 +89,14 @@
     ::tk/transitions [{::tk/to :choice-handle
                        ::tk/on ""}]}
    {::tk/name        :test
-    ::tk/stay       {::tk/guards  []
-                     ::tk/actions [(fn [_] (println "we stayed!"))]}
+    ::tk/stay        {::tk/guards  []
+                      ::tk/actions [(fn [_] (println "we stayed!"))]}
     ::tk/transitions [{::tk/on ""}]}])
 
 (def ini-state
   {::tk/states  test-me
    ::tk/action! (fn [{::tk/keys [action] :as fsm}] (action fsm))
-   ::tk/guard?  (fn [{::tk/keys [signal guard] :as fsm}] (println "weee") (guard fsm))
+   ::tk/guard?  (fn [{::tk/keys [signal guard] :as fsm}] (println signal) (guard fsm))
    ::tk/state   :choice-handle
    :stats       {:count        0
                  :current-path nil

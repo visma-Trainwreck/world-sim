@@ -20,16 +20,24 @@
   {:id       nil :name "tulip" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
    :location {:x nil :y nil :tile-id nil}})
 
+(def basic-life-stats
+  {:energy  0
+   :food    10
+   :stamina 10})
+
 (def cow
   {:id       nil :name "cow" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
    :location {:x nil :y nil :tile-id nil}})
 
-(def horse
+(def horse-stats
   {:id       nil :name "horse" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
    :location {:x nil :y nil :tile-id nil}
    :plan {:current-direction [1 0]
           :current-goal nil}
-   :fsm behavior/ini-state})
+   :life-stats basic-life-stats})
+
+(def horse
+  (conj behavior/ini-state horse-stats))
 
 (def tile {:id nil :x nil :y nil :taken? false})
 
