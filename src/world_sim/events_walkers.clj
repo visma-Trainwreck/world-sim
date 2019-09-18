@@ -14,8 +14,7 @@
 
 (defn use-fsm
   [world entity-class entity-id _]
-  (let [_   (println entity-id "entity-id")
-        entity (entity-id @(:pool entity-class))
+  (let [entity (entity-id @(:pool entity-class))
         entity-new (-> entity
                        (tk/apply-signal (return-as-map world entity-class entity-id)))]
     {:entity-class entity-class

@@ -39,7 +39,7 @@
 (def horse
   (conj behavior/ini-state horse-stats))
 
-(def tile {:id nil :x nil :y nil :taken? false})
+(def tile {:id nil :x nil :y nil :taken? false :grass 0 :dirt 0})
 
 (def world
   {:gaia            {:trees  {:actions [actions/entity-grow actions/entity-birth actions/entity-death actions/entity-remove]
