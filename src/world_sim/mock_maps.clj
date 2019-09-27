@@ -32,8 +32,7 @@
 (def horse-stats
   {:id       nil :name "horse" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
    :location {:x nil :y nil :tile-id nil}
-   :plan {:current-direction [1 0]
-          :current-goal nil}
+   :plan {:current-direction [1 0]}
    :life-stats basic-life-stats})
 
 (def horse
@@ -132,7 +131,8 @@
    :events          (chan 1024)
    :event-gather-starter (chan 1024)
    :system          {:main-running? (atom false)
-                     :events-done   (agent 0)}})
+                     :events-done   (agent 0)
+                     :exceptions false}})
 
 (def jacks [(get-in world [:gaia :trees])
             (get-in world [:living-entities :animal])])

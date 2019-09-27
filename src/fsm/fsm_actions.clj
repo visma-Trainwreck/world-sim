@@ -1,4 +1,6 @@
-(ns fsm.fsm-actions)
+(ns fsm.fsm-actions
+  (:require [path-finder.tools :as pf-tools]
+            [path-finder.a-star :as pf-core]))
 
 (defn sleep
   [fsm]
@@ -16,7 +18,27 @@
 
 (defn get-path
   [fsm]
-  fsm)
+  (println "GETTING PATH")
+  (let [world (get-in fsm [:tilakone.core/signal :world])
+        ;;todo this should be dynamic food not always grass
+        goal-key (get-in fsm [:tilakone.core/process :stats :current-goal])
+        tile-start (get-in fsm [:tilakone.core/process :location :tile-id])
+        tile-goal (rand-nth (pf-tools/find-nearest tile-start goal-key world))
+        _ (println "Tile start " tile-start " Tile Goal " tile-goal)
+        path (pf-core/get-path world tile-start tile-goal)]
+    (println "PRINTING PATH " path)
+    (assoc-in fsm [:tilakone.core/process :stats :current-path] path)))
+
+(defn travel-path
+  "change the tile its on, its path and its direction?"
+  [fsm]
+  (let [path (get-in fsm [:tilakone.core/process :stats :current-path])
+        _         (println "Travel the path: " path)
+        next-tile (first path)
+        new-path (drop 1 path)]
+    (-> fsm
+        (assoc-in[:tilakone.core/process :stats :current-path] new-path)
+        (assoc-in[:tilakone.core/process :location] {:x (first next-tile) :y (second next-tile) :tile-id next-tile}))))
 
 (defn unset-goal
   [fsm]

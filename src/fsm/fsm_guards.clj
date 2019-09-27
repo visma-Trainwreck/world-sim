@@ -40,7 +40,7 @@
   (let [entity (:tilakone.core/process fsm)
         tile-id (get-in entity [:location :tile-id])
         tile (tile-id @(get-in fsm [:tilakone.core/signal :world :enviroment :landmasses :pool]))]
-    (> (:grass tile) 15)))
+    (not (> (:grass tile) 15))))
 
 (defn has-goal
   [fsm]

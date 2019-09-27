@@ -47,9 +47,9 @@
                  :physics
                  :time
                  deref)]
-      (if-not (#{5} i)
+      (if-not (#{100} i)
         (do
-          (Thread/sleep 50)
+          (Thread/sleep 100)
           (swap! (get-in world [:physics :time]) (fn [_] i))
           (producer/put-event-jacks world)
           (recur (inc i)))

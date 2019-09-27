@@ -17,13 +17,14 @@
                        ::tk/to :eat}]}
    {::tk/name        :travel
     ::tk/enter       {::tk/guards  [guard-funcs/has-goal]
-                      ::tk/actions [fsm.fsm-actions/get-path]}
+                      ::tk/actions [(fn [fsm] (assoc-in fsm [:tilakone.core/process :stats :current-goal] :grass)) (fn [fsm] (action-funcs/get-path fsm))]}
     ::tk/stay        {::tk/guards  []
-                      ::tk/actions [#_travel-path]}
-    ::tk/leave       {::tk/guards  guard-funcs/travel-done?
-                      ::tk/actions [action-funcs/unset-goal]}
+                      ::tk/actions [(fn [fsm] (println "traveling !") fsm) action-funcs/travel-path]}
+    ::tk/leave       {::tk/guards  [guard-funcs/travel-done?]
+                      ::tk/actions [(fn [fsm] (println "leaving travel!") fsm) action-funcs/unset-goal]}
     ::tk/transitions [{::tk/on _
-                       ::tk/to :choice-handle}]}
+                       ::tk/to :choice-handle}
+                      {::tk/on _}]}
 
    {::tk/name        :sleep
     ::tk/enter       {::tk/guards  [guard-funcs/go-sleep?]
@@ -38,7 +39,7 @@
 
    {::tk/name        :eat
     ::tk/enter       {::tk/guards  [guard-funcs/go-eat?]
-                      ::tk/actions [action-funcs/eat]}
+                      ::tk/actions []}
     ::tk/stay        {::tk/guards  []
                       ::tk/actions [(fn [fsm] (action-funcs/eat fsm))]}
     ::tk/leave       {::tk/guards  [guard-funcs/done-eat?]
@@ -47,8 +48,8 @@
                        ::tk/to      :travel
                        ::tk/name    "travel"
                        ::tk/desc    "travel to food"
-                       ::tk/guards  [guard-funcs/can-eat?]
-                       ::tk/actions [(fn [fsm] (action-funcs/set-goal fsm :eat))]}
+                       ::tk/guards  [(not guard-funcs/can-eat?)]
+                       ::tk/actions [(fn [fsm] (action-funcs/set-goal fsm :grass))]}
                       {::tk/on _
                        ::tk/to :choice-handle}
                       {::tk/on _}]}])

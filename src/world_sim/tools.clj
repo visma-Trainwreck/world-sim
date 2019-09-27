@@ -2,6 +2,11 @@
   (:require [clojure.core.async :refer [<!! <! >!!]])
   (:import (java.util UUID)))
 
+(defn print-exception
+  [world e]
+  (if (:exceptions (:system world))
+    (println e)))
+
 (declare input)
 
 (defn fsm-fn-runner
@@ -37,7 +42,7 @@
   (cond
     (= condition :add) (conj @entity-pool {(:id entity) entity})
     (= condition :remove) (dissoc @entity-pool entity)
-    :else (println "condition was not found for entity " entity " condition: " condition)))
+    :else  (println "condition was not found for entity " entity " condition: " condition)))
 
 #_(defn input [world entity-class entity f res-before]
   (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!
@@ -52,7 +57,8 @@
 (defn input
   "This function is supposed to only change atoms when in the lambda function in a swap.
   Unfortunately we also expect the function to return something that was derived within the lambda
-  therefore we set an atom in the lambda to be able to make the function return the derived result."
+  therefore we set an atom in the lambda to be able to make the function return the derived result.
+  ... halp <(^.^<)"
   [world entity-class entity f res-before]
   (let [return-val (atom nil)]
     (swap! (:pool entity-class)
@@ -173,6 +179,14 @@
     (if tiles
       (rand-nth tiles)
       tiles)))
+
+(defn find-nearest
+  [world entity item]
+  (let [tile-id (get-in entity [:location :tile-id])
+        tile-map @(get-in world [:enviroment :landmasses :pool])
+        tile (tile-id @(get-in world [:enviroment :landmasses :pool]))]
+    (for [i 0]
+      (print "fail"))))
 
 (defn return-as-map
   [world entity-class entity-id]

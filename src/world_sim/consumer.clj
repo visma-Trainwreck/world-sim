@@ -33,10 +33,9 @@
 (defn start-job
   [world]
   (try (future (println "consumer started!")
-               (let [events-ref (get-in world [:system :events-done])]
-                 (while @(get-in world [:system :main-running?])
-                   (gather-event world))
-                 (println "consumer stopped!")))
+               (while true (get-in world [:system :main-running?])
+                 (gather-event world))
+               (println "consumer stopped!"))
        (catch Exception e
          (println e))))
 

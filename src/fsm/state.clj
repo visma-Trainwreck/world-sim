@@ -72,6 +72,7 @@
     ::tk/leave       {::tk/actions [(fn [m] (println "waking up!")
                                       (wake-up m))]}}
    {::tk/name        :eat
+    ::tk/enter        {::tk/actions [(fn [fsm] (def the-fsm fsm) fsm)]}
     ::tk/transitions [{::tk/to :choice-handle
                        ::tk/on ""}]}
    {::tk/name        :travel

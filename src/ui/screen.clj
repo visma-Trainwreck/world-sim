@@ -14,7 +14,7 @@
 
 (def size 5)
 
-(defn draw-path
+#_(defn draw-path
   []
   (q/fill 255 255 0)
   (let [path (get-path [99 2] [5 99])]
@@ -34,15 +34,18 @@
          (q/text (str "year: " @(get-in maps/world [:physics :time])) 2100 90)
          (q/text (str "framerate: " (q/current-frame-rate)) 2100 200)
 
-         (doseq [[key animal] animals]
-           (let [x (get-in animal [:location :x])
-                 y (get-in animal [:location :y])]
-             (if (:death-date animal)
+         (doseq [animal animals]
+           (let [the-animal (second animal)
+                 x (get-in the-animal [:location :x])
+                 y (get-in the-animal [:location :y])]
+             (if (:death-date the-animal)
                (q/fill 150 150 150)
                (q/fill 255 100 100))
              (q/rect (* size x) (* size y) size size)))
 
-         (doseq [[key tree] trees-birch]
+
+
+         #_#_#_(doseq [[key tree] trees-birch]
              (let [x (get-in tree [:location :x])
                    y (get-in tree [:location :y])]
                (if (:death-date tree)
@@ -62,9 +65,7 @@
              (if (:death-date tree)
                (q/fill 150 150 150)
                (q/fill 100 100 255))
-             (q/rect (* size x) (* size y) size size)))
-
-         (draw-path))
+             (q/rect (* size x) (* size y) size size))))
   #_(q/fill 255 100 100)
   #_(doseq [coords state
           :let [x (first coords)

@@ -2,5 +2,5 @@
   (:require
     [world-sim.events-walkers :as events]))
 
-(def sleep-fn
+#_(def sleep-fn
   [events/sleep])
