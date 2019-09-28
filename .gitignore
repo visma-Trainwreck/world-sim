@@ -11,4 +11,4 @@ pom.xml.asc
 /.nrepl-port
 .hgignore
 .hg/
-workspace.xml
+.idea/workspace.xml
