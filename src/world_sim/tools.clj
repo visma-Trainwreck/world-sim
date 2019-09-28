@@ -2,6 +2,22 @@
   (:require [clojure.core.async :refer [<!! <! >!!]])
   (:import (java.util UUID)))
 
+(defn print-exception
+  [world e]
+  (if (:exceptions (:system world))
+    (println e)))
+
+(declare input)
+
+(defn fsm-fn-runner
+  [world action {:keys [entity-id entity-class]}]
+  (loop [events-list (:events action)
+         status true]
+    (if (and status (first events-list))
+      (recur
+        (rest events-list)
+        (input world entity-class entity-id (first events-list) status)))))
+
 (defn id-creater-entity
   [entity]
   (conj entity {:id (keyword (.toString (UUID/randomUUID)))}))
@@ -26,7 +42,7 @@
   (cond
     (= condition :add) (conj @entity-pool {(:id entity) entity})
     (= condition :remove) (dissoc @entity-pool entity)
-    :else (println condition)))
+    :else  (println "condition was not found for entity " entity " condition: " condition)))
 
 (defn input [world entity-class entity f res-before]
   (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!
@@ -34,9 +50,42 @@
         entity-pool (:pool (:entity-class result-map))
         entity-pool-new (conditional-map-func entity-pool entity-new (:opt result-map))]
     (if entity-new
-      (swap! entity-pool (fn [_] entity-pool-new) )
+      (swap! entity-pool (fn [_] entity-pool-new))
       nil)
     (:func-return result-map)))
+
+#_(defn input
+  "This function is supposed to only change atoms when in the lambda function in a swap.
+  Unfortunately we also expect the function to return something that was derived within the lambda
+  therefore we set an atom in the lambda to be able to make the function return the derived result.
+  ... halp <(^.^<)"
+  [world entity-class entity f res-before]
+  (let [return-val (atom nil)]
+    (swap! (:pool entity-class)
+           (fn [ori] (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!
+                           entity-new (:entity-new result-map)
+                           entity-pool (:pool (:entity-class result-map))
+                           entity-pool-new (conditional-map-func entity-pool entity-new (:opt result-map))]
+                       (do
+                         (swap! return-val (fn [_] result-map))
+                         (if entity-new
+                           entity-pool-new
+                           ori)))))
+    (:func-return @return-val)))
+
+#_(defn tester
+  [world entity-class entity f res-before]
+  (loop [return nil]
+    (if (nil? return)
+      (swap! (:pool entity-class)
+             (fn [ori] (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!
+                             entity-new (:entity-new result-map)
+                             entity-pool (:pool (:entity-class result-map))
+                             entity-pool-new (conditional-map-func entity-pool entity-new (:opt result-map))]
+                         (do
+                           (if entity-new
+                             entity-pool-new
+                             ori))))))))
 
 (defn locate-where
   "Performs a breadth-first recursive search in the nested data structure `m`,
@@ -99,10 +148,10 @@
     [x y]))
 
 #_(defn update-tile
-  [world tile]
-  (let [tiles-ref (get-in world [:enviroment :landmasses :pool])
-        tile-updated (conj tile {:taken? true})]
-    (dosync (ref-set tiles-ref (conj @tiles-ref {(:id tile) tile-updated})))))
+    [world tile]
+    (let [tiles-ref (get-in world [:enviroment :landmasses :pool])
+          tile-updated (conj tile {:taken? true})]
+      (dosync (ref-set tiles-ref (conj @tiles-ref {(:id tile) tile-updated})))))
 
 (defn freetile-locate
   [tile-ref tiles-id]
@@ -131,17 +180,31 @@
       (rand-nth tiles)
       tiles)))
 
+(defn find-nearest
+  [world entity item]
+  (let [tile-id (get-in entity [:location :tile-id])
+        tile-map @(get-in world [:enviroment :landmasses :pool])
+        tile (tile-id @(get-in world [:enviroment :landmasses :pool]))]
+    (for [i 0]
+      (print "fail"))))
+
+(defn return-as-map
+  [world entity-class entity-id]
+  {:world        world
+   :entity-class entity-class
+   :entity-id    entity-id})
+
 #_(defn xxxxxx
-  [world tiles-ref tile-id]
-  ;; an atom in a let binding :S  shucks...
-  ;; we are doing something wrong !
-  (let [event-return (atom nil)]
-    (dosync (ref-set tiles-ref
-                     (let [neighbours (tile-get-neighbours tiles-ref tile-id)
-                           tile (rand-nth (freetile-locate tiles-ref neighbours))]
-                       (if tile
-                         (do
-                           (swap! event-return (fn [_] tile))
-                           (conj @tiles-ref {(:id tile) (conj tile {:taken? true})}))
-                         @tiles-ref))))
-    @event-return))
+    [world tiles-ref tile-id]
+    ;; an atom in a let binding :S  shucks...
+    ;; we are doing something wrong !
+    (let [event-return (atom nil)]
+      (dosync (ref-set tiles-ref
+                       (let [neighbours (tile-get-neighbours tiles-ref tile-id)
+                             tile (rand-nth (freetile-locate tiles-ref neighbours))]
+                         (if tile
+                           (do
+                             (swap! event-return (fn [_] tile))
+                             (conj @tiles-ref {(:id tile) (conj tile {:taken? true})}))
+                           @tiles-ref))))
+      @event-return))

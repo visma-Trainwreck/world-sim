@@ -3,6 +3,7 @@
 
 (defn test-tree-populate
   [world]
+  (println "placing trees")
   (let [tree-pool (get-in world [:gaia :trees :pool])]
     (doseq [[key tree-class] tree-pool
             :let [tiles-pool (get-in world [:enviroment :landmasses :pool])
@@ -28,7 +29,7 @@
         horse (:newborn horse-class)
         horse-updated (-> horse
                           (conj {:id (keyword (tools/id-creater))})
-                          (assoc-in [:location] {:x 20 :y 20 :tile-id [20 20]})
+                          (assoc-in [:location] {:x 0 :y 0 :tile-id [0 0]})
                           (assoc-in [:plan :current-direction] [1 0]))]
     (swap! horse-pool (fn [pool] (conj pool {(:id horse-updated) horse-updated})))
     world))
@@ -36,6 +37,8 @@
 (def cpu-count (atom 0))
 (def map-agent (agent {}))
 #_(def amount-since-last (atom 0))
+
+(def grass-tile [45 72])
 
 (defn create-tile-map
   [world]
@@ -50,7 +53,9 @@
         #_(swap! cpu-count #(+ % 1))
         (let [id [i j]
               new-tile (conj tile {:id id :x i :y j})]
-          (send map-agent (fn [old-map] (conj old-map {(:id new-tile) new-tile}))))
+          (if (= grass-tile [i j])
+            (send map-agent (fn [old-map] (conj old-map {(:id new-tile) (conj new-tile {:grass 100})})))
+            (send map-agent (fn [old-map] (conj old-map {(:id new-tile) new-tile})))))
         #_(swap! cpu-count #(- % 1))
         #_(swap! amount-since-last inc))))
   #_(if (> @cpu-count 1)
@@ -95,7 +100,7 @@
   [world]
   (let [new-world (-> world
                       create-tile-map
-                      animal-populate
+                      #_animal-populate
                       test-tree-populate)]
     (println "world inititated")
     new-world))

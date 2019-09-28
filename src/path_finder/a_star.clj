@@ -1,6 +1,5 @@
 (ns path-finder.a-star
-  (:require [world-sim.mock-maps :as maps :refer [world]]
-            [path-finder.tools :as tools]
+  (:require [path-finder.tools :as tools]
             [clojure.data.priority-map :refer [priority-map-by]]))
 
 (defn distance
@@ -40,7 +39,7 @@
 #_(use '[clojure.data.priority-map])
 
 (defn search
-  ([map start end]
+  ([world map start end]
    (let [[sx sy] start
          [ex ey] end
          open (priority-map-by
@@ -79,7 +78,7 @@
        (path end parent closed)))))
 
 (defn get-path
-  [pos-start pos-goal]
+  [world pos-start pos-goal]
   #_(let [translated-map (tools/tester pos-start pos-goal)]
     (search translated-map pos-start pos-goal))
-  (search @(get-in world [:enviroment :landmasses :pool]) pos-start pos-goal))
+  (search world @(get-in world [:enviroment :landmasses :pool]) pos-start pos-goal))

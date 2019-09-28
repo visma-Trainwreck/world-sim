@@ -1,7 +1,8 @@
 (ns world-sim.mock-maps
   (:require [world-sim.actions :as actions]
-            [clojure.core.async :refer [chan]]))
-
+            [world-sim.actions-walkers :as actions-walkers]
+            [clojure.core.async :refer [chan]]
+            [fsm.behavior :as behavior]))
 
 (def birch
   {:id       nil :name "birch" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
@@ -19,15 +20,25 @@
   {:id       nil :name "tulip" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
    :location {:x nil :y nil :tile-id nil}})
 
+(def basic-life-stats
+  {:energy  0
+   :food    10
+   :stamina 10})
+
 (def cow
   {:id       nil :name "cow" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
    :location {:x nil :y nil :tile-id nil}})
 
-(def horse
+(def horse-stats
   {:id       nil :name "horse" :size 0 :last-check nil :last-birth 0 :health 1 :death-date nil :births-amount 0
-   :location {:x nil :y nil :tile-id nil}})
+   :location {:x nil :y nil :tile-id nil}
+   :plan {:current-direction [1 0]}
+   :life-stats basic-life-stats})
 
-(def tile {:id nil :x nil :y nil :taken? false})
+(def horse
+  (conj behavior/ini-state horse-stats))
+
+(def tile {:id nil :x nil :y nil :taken? false :grass 0 :dirt 0})
 
 (def world
   {:gaia            {:trees  {:actions [actions/entity-grow actions/entity-birth actions/entity-death actions/entity-remove]
@@ -82,8 +93,8 @@
                                                  :birth-cooldown 1
                                                  :newborn        birch}}}}
    :physics         {:time (atom 0)
-                     :world-width 1000
-                     :world-height 1000}
+                     :world-width 100
+                     :world-height 100}
    :enviroment      {:landmasses {:class-name :landmasses
                                   :tile       tile
                                   :pool       (atom {})}
@@ -93,7 +104,7 @@
    :living-entities {:human  {:pool          []
                               :base-growth   1
                               :base-lifespan 1}
-                     :animal {:actions [actions/entity-move]
+                     :animal {:actions [actions-walkers/entity-fsm]
                               :time-divisor 1
                               :pool {:horse {:pool         (atom {})
                                              :locks        (atom {})
@@ -105,11 +116,23 @@
                                              :birth-max      1000
                                              :birth-cooldown 1
                                              :newborn      horse
-                                             :plan {:current-direction [1 0]}}}}}
+                                             :plan {:current-direction [1 0]}}
+                                     :cow {:pool         (atom {})
+                                           :locks        (atom {})
+                                           :class-name     :cow
+                                           :base-growth    1
+                                           :base-size      10
+                                           :base-lifespan  40
+                                           :birth-min      1
+                                           :birth-max      1000
+                                           :birth-cooldown 1
+                                           :newborn      cow
+                                           :plan {:current-direction [1 0]}}}}}
    :events          (chan 1024)
    :event-gather-starter (chan 1024)
    :system          {:main-running? (atom false)
-                     :events-done   (agent 0)}})
+                     :events-done   (agent 0)
+                     :exceptions false}})
 
 (def jacks [(get-in world [:gaia :trees])
             (get-in world [:living-entities :animal])])
