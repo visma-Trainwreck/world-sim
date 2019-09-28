@@ -44,7 +44,7 @@
     (= condition :remove) (dissoc @entity-pool entity)
     :else  (println "condition was not found for entity " entity " condition: " condition)))
 
-#_(defn input [world entity-class entity f res-before]
+(defn input [world entity-class entity f res-before]
   (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!
         entity-new (:entity-new result-map)
         entity-pool (:pool (:entity-class result-map))
@@ -54,7 +54,7 @@
       nil)
     (:func-return result-map)))
 
-(defn input
+#_(defn input
   "This function is supposed to only change atoms when in the lambda function in a swap.
   Unfortunately we also expect the function to return something that was derived within the lambda
   therefore we set an atom in the lambda to be able to make the function return the derived result.

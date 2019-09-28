@@ -5,7 +5,7 @@
   [world entity-class entity-id _]
   (try (let [entity (get @(:pool entity-class) entity-id)
              entity-new (conj entity {:last-birth    (tools/now world)
-                                      :births-amount (+ 1 (:births-amount entity))})]
+                                      :births-amount (+ 1 (:births-amount (entity-id @(:pool entity-class))))})]
          {:entity-class entity-class
           :entity-new   entity-new
           :opt          :add
