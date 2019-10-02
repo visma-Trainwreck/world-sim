@@ -139,13 +139,28 @@
   (swap! ref-locks (fn [_] (let [updated-locks (assoc-in @ref-locks [id :locked-actions action-name] false)]
                              updated-locks))))
 
+(defn get-neighbours
+  [[x y] deltas]
+  (mapv
+    (fn [[dx dy]] [(+ x dx) (+ y dy)])
+    deltas))
+
+(defmulti sight-pattern :name)
+(defmethod sight-pattern :default
+  [_]
+  [[-1 -1] [-1 0] [-1 1]
+   [ 0 -1]        [ 0 1]
+   [ 1 -1] [1  0] [ 1 1]])
+(defmethod sight-pattern "cow"
+  [cow]
+  (let [direction (:current-direction cow)]
+    direction))                                                       ;; cow is blind
+
 (defn tile-get-neighbours
   [tile-ref tile-id]
-  (for [y (range (- (second tile-id) 1) (+ (second tile-id) 2))
-        x (range (- (first tile-id) 1) (+ (first tile-id) 2))
-        :when (and (get @tile-ref [x y])
-                   (not (= [x y] tile-id)))]
-    [x y]))
+  (remove nil?
+          (mapv (partial get-in @tile-ref)
+                (get-neighbours tile-id (sight-pattern (get-in @tile-ref tile-id))))))
 
 #_(defn update-tile
     [world tile]

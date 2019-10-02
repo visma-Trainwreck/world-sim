@@ -40,6 +40,8 @@
 
 (def tile {:id nil :x nil :y nil :taken? false :grass 0 :dirt 0})
 
+(def log {:threads (atom {})})
+
 (def world
   {:gaia            {:trees  {:actions [actions/entity-grow actions/entity-birth actions/entity-death actions/entity-remove]
                               :time-divisor 12
@@ -132,7 +134,8 @@
    :event-gather-starter (chan 1024)
    :system          {:main-running? (atom false)
                      :events-done   (agent 0)
-                     :exceptions false}})
+                     :exceptions false
+                     :log log}})
 
 (def jacks [(get-in world [:gaia :trees])
             (get-in world [:living-entities :animal])])
