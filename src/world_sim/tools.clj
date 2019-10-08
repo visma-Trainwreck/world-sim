@@ -151,7 +151,7 @@
   [[-1 -1] [-1 0] [-1 1]
    [ 0 -1]        [ 0 1]
    [ 1 -1] [1  0] [ 1 1]])
-(defmethod sight-pattern "cow"
+#_(defmethod sight-pattern "cow"
   [cow]
   (let [direction (:current-direction cow)]
     direction))                                                       ;; cow is blind
@@ -159,8 +159,9 @@
 (defn tile-get-neighbours
   [tile-ref tile-id]
   (remove nil?
-          (mapv (partial get-in @tile-ref)
-                (get-neighbours tile-id (sight-pattern (get-in @tile-ref tile-id))))))
+          (get-neighbours tile-id (sight-pattern (get @tile-ref tile-id)))
+          #_(mapv (partial get @tile-ref)
+                (get-neighbours tile-id (sight-pattern (get @tile-ref tile-id))))))
 
 #_(defn update-tile
     [world tile]
@@ -208,18 +209,3 @@
   {:world        world
    :entity-class entity-class
    :entity-id    entity-id})
-
-#_(defn xxxxxx
-    [world tiles-ref tile-id]
-    ;; an atom in a let binding :S  shucks...
-    ;; we are doing something wrong !
-    (let [event-return (atom nil)]
-      (dosync (ref-set tiles-ref
-                       (let [neighbours (tile-get-neighbours tiles-ref tile-id)
-                             tile (rand-nth (freetile-locate tiles-ref neighbours))]
-                         (if tile
-                           (do
-                             (swap! event-return (fn [_] tile))
-                             (conj @tiles-ref {(:id tile) (conj tile {:taken? true})}))
-                           @tiles-ref))))
-      @event-return))

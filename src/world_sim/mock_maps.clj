@@ -40,11 +40,22 @@
 
 (def tile {:id nil :x nil :y nil :taken? false :grass 0 :dirt 0})
 
-(def log {:threads (atom {})})
+(def log {:threads   (atom '())
+          :consumers {:birch (atom '())
+                      :oak (atom '())
+                      :elm (atom '())
+                      :horse (atom '())
+                      :cow (atom '())}
+          :producers {:birch (atom '())
+                      :oak (atom '())
+                      :elm (atom '())
+                      :horse (atom '())
+                      :cow (atom '())}
+          :exceptions (atom '())})
 
 (def world
   {:gaia            {:trees  {:actions [actions/entity-grow actions/entity-birth actions/entity-death actions/entity-remove]
-                              :time-divisor 12
+                              :time-divisor 1
                               :pool    {:birch {:pool           (atom {})
                                                 :locks          (atom {})
                                                 :path-key       :birch-tree
@@ -135,7 +146,9 @@
    :system          {:main-running? (atom false)
                      :events-done   (agent 0)
                      :exceptions false
-                     :log log}})
+                     :logs log
+                     :logging-all true
+                     :logging-exceptions true}})
 
 (def jacks [(get-in world [:gaia :trees])
             (get-in world [:living-entities :animal])])
