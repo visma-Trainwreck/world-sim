@@ -40,12 +40,12 @@
                  y (get-in the-animal [:location :y])]
              (if (:death-date the-animal)
                (q/fill 150 150 150)
-               (q/fill 255 100 100))
+               (q/fill 255 255 100))
              (q/rect (* size x) (* size y) size size)))
 
 
 
-         #_#_#_(doseq [[key tree] trees-birch]
+         (doseq [[key tree] trees-birch]
              (let [x (get-in tree [:location :x])
                    y (get-in tree [:location :y])]
                (if (:death-date tree)

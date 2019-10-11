@@ -100,7 +100,7 @@
   [world]
   (let [new-world (-> world
                       create-tile-map
-                      #_animal-populate
+                      animal-populate
                       test-tree-populate)]
     (println "world inititated")
     new-world))

@@ -55,7 +55,7 @@
           (recur (inc i)))
         (do
           (println "done")
-          (Thread/sleep 200)
+          (Thread/sleep 10)
           (swap! (get-in world [:system :main-running?]) (fn [_] false))
           (clojure.core.async/>!! (:events world) "stopped")
           (clojure.core.async/>!! (:events world) "stopped")

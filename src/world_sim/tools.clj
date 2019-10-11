@@ -9,7 +9,7 @@
 
 (declare input)
 
-(defn fsm-fn-runner
+#_(defn fsm-fn-runner
   [world action {:keys [entity-id entity-class]}]
   (loop [events-list (:events action)
          status true]
@@ -53,6 +53,15 @@
       (swap! entity-pool (fn [_] entity-pool-new))
       nil)
     (:func-return result-map)))
+
+#_(defn input
+  [world entity-class entity f res-before]
+  (let [entity-pool (:pool entity-class)]
+    (swap! entity-pool (fn [_] (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!
+                                     entity-new (:entity-new result-map)
+                                     entity-pool (:pool (:entity-class result-map))
+                                     entity-pool-new (conditional-map-func entity-pool entity-new (:opt result-map))]
+                                 entity-pool-new)))))
 
 #_(defn input
   "This function is supposed to only change atoms when in the lambda function in a swap.
@@ -139,13 +148,29 @@
   (swap! ref-locks (fn [_] (let [updated-locks (assoc-in @ref-locks [id :locked-actions action-name] false)]
                              updated-locks))))
 
+(defn get-neighbours
+  [[x y] deltas]
+  (mapv
+    (fn [[dx dy]] [(+ x dx) (+ y dy)])
+    deltas))
+
+(defmulti sight-pattern :name)
+(defmethod sight-pattern :default
+  [_]
+  [[-1 -1] [-1 0] [-1 1]
+   [ 0 -1]        [ 0 1]
+   [ 1 -1] [1  0] [ 1 1]])
+#_(defmethod sight-pattern "cow"
+  [cow]
+  (let [direction (:current-direction cow)]
+    direction))                                                       ;; cow is blind
+
 (defn tile-get-neighbours
   [tile-ref tile-id]
-  (for [y (range (- (second tile-id) 1) (+ (second tile-id) 2))
-        x (range (- (first tile-id) 1) (+ (first tile-id) 2))
-        :when (and (get @tile-ref [x y])
-                   (not (= [x y] tile-id)))]
-    [x y]))
+  (remove nil?
+          (get-neighbours tile-id (sight-pattern (get @tile-ref tile-id)))
+          #_(mapv (partial get @tile-ref)
+                (get-neighbours tile-id (sight-pattern (get @tile-ref tile-id))))))
 
 #_(defn update-tile
     [world tile]
@@ -193,18 +218,3 @@
   {:world        world
    :entity-class entity-class
    :entity-id    entity-id})
-
-#_(defn xxxxxx
-    [world tiles-ref tile-id]
-    ;; an atom in a let binding :S  shucks...
-    ;; we are doing something wrong !
-    (let [event-return (atom nil)]
-      (dosync (ref-set tiles-ref
-                       (let [neighbours (tile-get-neighbours tiles-ref tile-id)
-                             tile (rand-nth (freetile-locate tiles-ref neighbours))]
-                         (if tile
-                           (do
-                             (swap! event-return (fn [_] tile))
-                             (conj @tiles-ref {(:id tile) (conj tile {:taken? true})}))
-                           @tiles-ref))))
-      @event-return))
