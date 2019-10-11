@@ -45,4 +45,4 @@
                                       log-entity-produce)
       (= :consumer type) (update-atom ctx
                                       (get-in logs [:consumers (:class-name entity-class)])
-                                      log-entity-produce))))
+                                      log-entity-consume))))

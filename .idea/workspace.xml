@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e61c451f-b719-46b4-8591-b9f2dc22f69a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_sim/consumer.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/consumer.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_sim/events.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/events.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/screen.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/screen.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_sim/init.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/init.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/world_sim/logs.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/logs.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_sim/mock_maps.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/mock_maps.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_sim/producer.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/producer.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_sim/simulate.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/simulate.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/world_sim/tools.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/tools.clj" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,55 +22,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/logs.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/world_sim/simulate.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/tools.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="160" column="2" lean-forward="true" selection-start-line="160" selection-start-column="2" selection-end-line="160" selection-end-column="2" />
+            <state relative-caret-position="357">
+              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/mock_maps.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="149" column="38" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/actions.clj">
+        <entry file="file://$PROJECT_DIR$/src/fsm/fsm_actions.clj">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/producer.clj">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/tools.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="243">
+              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fsm/behavior.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/world_sim/events_walkers.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/screen.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -81,17 +78,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/world_sim/consumer.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="306">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/world_sim/events.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="35" column="62" lean-forward="true" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+            <state relative-caret-position="-255">
+              <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -108,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/world_sim/init.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+            <state relative-caret-position="427">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
             </state>
           </provider>
         </entry>
@@ -133,6 +130,7 @@
       <find>printing</find>
       <find>condition was</find>
       <find>try</find>
+      <find>inp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,26 +155,26 @@
         <option value="$PROJECT_DIR$/src/path_finder/a_star.clj" />
         <option value="$PROJECT_DIR$/src/fsm/behavior.clj" />
         <option value="$PROJECT_DIR$/src/path_finder/tools.clj" />
-        <option value="$PROJECT_DIR$/src/ui/screen.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/events_walkers.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/fsm_events_walker.clj" />
         <option value="$PROJECT_DIR$/src/fsm/fsm_actions.clj" />
-        <option value="$PROJECT_DIR$/src/world_sim/init.clj" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/world_sim/producer.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/consumer.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/actions.clj" />
-        <option value="$PROJECT_DIR$/src/world_sim/logs.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/mock_maps.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/simulate.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/events.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/logs.clj" />
+        <option value="$PROJECT_DIR$/src/ui/screen.clj" />
+        <option value="$PROJECT_DIR$/src/world_sim/init.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/tools.clj" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="525" />
-    <option name="y" value="-25" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1750" />
     <option name="height" value="1040" />
   </component>
@@ -185,6 +183,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,14 +207,18 @@
               <item name="world_sim" type="b2602c69:ProjectViewProjectNode" />
               <item name="world_sim" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="world_sim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="world_sim" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="world_sim" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,7 +236,7 @@
       <recent name="C:\Users\peter.l.rasmussen\Documents\project\world_sim\src\path_finder" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1570515972597">{:repl-history {:ide [], :local [{:command &quot;(def my-test (tools/tester [0 1] [3 3]))&quot;, :offset 12, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count my-test)&quot;, :offset 14, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 1] [3 5])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 1] [2 5])&quot;, :offset 22, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count [0 0 0])&quot;, :offset 6, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count [[0 0 1 0] [0 0 0 0] [0 0 0 1]])&quot;, :offset 38, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count (first [[0 0 1 0] [0 0 0 0] [0 0 0 1]]))&quot;, :offset 6, :ns &quot;path-finder.a-star&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&lt; xs xe) [xe xs] [xs xe])\n        range-y (if (&lt; ys ye) [ye ys] [ys ye])]\n    [range-x range-y]))&quot;, :offset 193, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&gt; xs xe) [xe xs] [xs xe])\n        range-y (if (&gt; ys ye) [ye ys] [ys ye])]\n    [range-x range-y]))&quot;, :offset 193, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 0] [5 5])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [5 5] [0 0])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(range [1 4])&quot;, :offset 11, :ns &quot;path-finder.tools&quot;} {:command &quot;(range 3 4)&quot;, :offset 10, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn tester\n  [start end]\n  (let [tile-map-ref (get-in world [:enviroment :landmasses :pool])\n        [xs ys] start\n        [xe ye] end\n        [[xstart xend] range-x [ystart yend] range-y] (range-finder start end)]\n    (vec (for [x (range xs (+ 1 xe))]\n           (vec (for [y (range ys (+ 1 ye))\n                      :let [tile (get @tile-map-ref [x y])]\n                      :when tile]\n                  (if (:taken? tile)\n                    1\n                    0)))))))&quot;, :offset 480, :ns &quot;path-finder.tools&quot;} {:command &quot;(tester [0 0] [3 3])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&gt; xs xe) {:range-x [xe (+ 1 xs)]\n                               :point-h :right}\n                              {:range-x [xs (+ 1 xe)]\n                               :point-h :left})\n\n        range-y (if (&gt; ys ye) {:range-y [ye (+ 1 ys)]\n                               :point-v :down}\n                              {:range-y [ys (+ 1 ye)]\n                               :point-v :up})]\n    (conj range-x range-y)))&quot;, :offset 510, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 0] [3 3])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 3] [3 1])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(&gt; 0 3)&quot;, :offset 6, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&gt; xs xe) {:range-x [xe (+ 1 xs)]\n                               :point-h :right}\n                              {:range-x [xs (+ 1 xe)]\n                               :point-h :left})\n\n        range-y (if (&gt; ys ye) {:range-y [ye (+ 1 ys)]\n                               :point-v :up}\n                              {:range-y [ys (+ 1 ye)]\n                               :point-v :down})]\n    (conj range-x range-y)))&quot;, :offset 510, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 0] [3 1])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(get-path [0 0] [3 4])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [0 0] [3 3])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;@(get-in world [:enviroment :landmasses :pool])&quot;, :offset 47, :ns &quot;path-finder.a-star&quot;} {:command &quot;(init-world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(get @(get-in world [:enviroment :landmasses :pool]) [3 4])&quot;, :offset 57, :ns &quot;path-finder.a-star&quot;} {:command &quot;e&quot;, :offset 1, :ns &quot;path-finder.a-star&quot;} {:command &quot;(def tester {[0 0] {:name \&quot;peter\&quot;}\n             [2 3] {:name \&quot;grethe\&quot;}})&quot;, :offset 68, :ns &quot;path-finder.a-star&quot;} {:command &quot;(keys tester)&quot;, :offset 0, :ns &quot;path-finder.a-star&quot;} {:command &quot;(init world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(get-path [1 1] [3 3])&quot;, :offset 19, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [0 0] [4 4])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-in world :physics :world-height)&quot;, :offset 37, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world world)&quot;, :offset 17, :ns &quot;world-sim.simulate&quot;} {:command &quot;(get-path [0 0] [455 300])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(show-window)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;} {:command &quot;(start-producers maps/world)&quot;, :offset 27, :ns &quot;world-sim.simulate&quot;} {:command &quot;(def tester {:sun {}})&quot;, :offset 20, :ns &quot;world-sim.core&quot;} {:command &quot;(conj [] \&quot;somelog\&quot;)&quot;, :offset 17, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt;&gt; \&quot;somelog\&quot; \n     (conj []))&quot;, :offset 30, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt;&gt; [] \n     (conj \&quot;somelog\&quot;)\n     (conj \&quot;somelog\&quot;))&quot;, :offset 52, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; [] \n     (conj \&quot;somelog\&quot;)\n     (conj \&quot;somelog\&quot;))&quot;, :offset 3, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; [] \n     (conj \&quot;somelog\&quot;)\n     (conj \&quot;somelog1\&quot;))&quot;, :offset 50, :ns &quot;world-sim.core&quot;} {:command &quot;(log-entity-produce\n  {:system {:log {}}} {:class-name :sun} {:id :peter} nil nil)&quot;, :offset 81, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-entity-produce\n  {:system {:log (ref {})}} {:class-name :sun} {:id :peter} nil nil)&quot;, :offset 41, :ns &quot;world-sim.logs&quot;} {:command &quot;{:system {:log (atom {})}} {:class-name :sun} {:id :peter} nil nil&quot;, :offset 66, :ns &quot;world-sim.logs&quot;} {:command &quot;(get-in {:system :log (atom {})} [:system :log])&quot;, :offset 29, :ns &quot;world-sim.logs&quot;} {:command &quot;(get-in {:system {:log (atom {})}} [:system :log])&quot;, :offset 18, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-entity-produce\n  {:system {:log (atom {})}} {:class-name :sun} {:id :peter} nil nil)&quot;, :offset 89, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-entity-produce\n  {:system {:log (atom {})} :physics {:time (atom 0)}} {:class-name :sun} {:id :peter} nil nil)&quot;, :offset 36, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-thread world-sim.mock-maps/world \&quot;c3po\&quot; Exception)&quot;, :offset 54, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-thread world-sim.mock-maps/world \&quot;c3po\&quot; RuntimeException)&quot;, :offset 61, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-thread world-sim.mock-maps/world \&quot;c3po\&quot; \&quot;sum exception\&quot;)&quot;, :offset 59, :ns &quot;world-sim.logs&quot;} {:command &quot;(cond 3\n      (= 3) (println \&quot;true\&quot;))&quot;, :offset 37, :ns &quot;world-sim.logs&quot;} {:command &quot;(cond 3 \n      (= 3 %) (println \&quot;true\&quot;))&quot;, :offset 20, :ns &quot;world-sim.logs&quot;} {:command &quot;(cond 3 \n      (= 3 3) (println \&quot;true\&quot;))&quot;, :offset 21, :ns &quot;world-sim.logs&quot;} {:command &quot;(cond\n      (= 3 3) (println \&quot;true\&quot;))&quot;, :offset 5, :ns &quot;world-sim.logs&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    )&quot;, :offset 56, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :horse\n    deref)&quot;, :offset 72, :ns &quot;world-sim.simulate&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :oak\n    :pool\n    deref\n    count)&quot;, :offset 84, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref\n    count)&quot;, :offset 56, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :elm\n    :pool\n    deref\n    count)&quot;, :offset 54, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :elm\n    deref)&quot;, :offset 70, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref)&quot;, :offset 60, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :birch\n    deref)&quot;, :offset 62, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs)&quot;, :offset 36, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    type)&quot;, :offset 45, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    count)&quot;, :offset 46, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    vals)&quot;, :offset 45, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :threads)&quot;, :offset 49, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :threads\n    deref)&quot;, :offset 59, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    keys)&quot;, :offset 60, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    first)&quot;, :offset 80, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    last\n    (dissoc :class))&quot;, :offset 79, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    keys\n    first)&quot;, :offset 89, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    keys)&quot;, :offset 79, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    (nth 20000))&quot;, :offset 85, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    (nth 20000)\n    (dissoc :class))&quot;, :offset 105, :ns &quot;world-sim.simulate&quot;} {:command &quot;(conj [] 1)&quot;, :offset 10, :ns &quot;world-sim.core&quot;} {:command &quot;d&quot;, :offset 1, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; conj [] 1)&quot;, :offset 14, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; 1\n  (conj []))&quot;, :offset 18, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; 1\n  (conj [])\n    (conj []))&quot;, :offset 26, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; []\n  (conj 1)\n    (conj 1))&quot;, :offset 29, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; '()\n  (conj 1)\n    (conj 1))&quot;, :offset 5, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; '()\n  (conj 1)\n    (conj 1)\n    (conj 2))&quot;, :offset 43, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    (nth 1)\n    (dissoc :class))&quot;, :offset 81, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    first\n    (dissoc :class))&quot;, :offset 99, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    )&quot;, :offset 75, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :consumers\n    :oak\n    deref\n    count)&quot;, :offset 80, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :exceptions)&quot;, :offset 52, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :exceptions\n    deref)&quot;, :offset 62, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    deref)&quot;, :offset 51, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers)&quot;, :offset 52, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    count)&quot;, :offset 80, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :birch\n    deref\n    count)&quot;, :offset 62, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :elm\n    deref\n    count)&quot;, :offset 60, :ns &quot;world-sim.simulate&quot;} {:command &quot;(run)&quot;, :offset 4, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :exceptions\n    deref\n    count)&quot;, :offset 52, :ns &quot;world-sim.simulate&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1570647484730">{:repl-history {:ide [], :local [{:command &quot;(def my-test (tools/tester [0 1] [3 3]))&quot;, :offset 12, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count my-test)&quot;, :offset 14, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 1] [3 5])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(tools/tester [0 1] [2 5])&quot;, :offset 22, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count [0 0 0])&quot;, :offset 6, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count [[0 0 1 0] [0 0 0 0] [0 0 0 1]])&quot;, :offset 38, :ns &quot;path-finder.a-star&quot;} {:command &quot;(count (first [[0 0 1 0] [0 0 0 0] [0 0 0 1]]))&quot;, :offset 6, :ns &quot;path-finder.a-star&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&lt; xs xe) [xe xs] [xs xe])\n        range-y (if (&lt; ys ye) [ye ys] [ys ye])]\n    [range-x range-y]))&quot;, :offset 193, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&gt; xs xe) [xe xs] [xs xe])\n        range-y (if (&gt; ys ye) [ye ys] [ys ye])]\n    [range-x range-y]))&quot;, :offset 193, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 0] [5 5])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [5 5] [0 0])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(range [1 4])&quot;, :offset 11, :ns &quot;path-finder.tools&quot;} {:command &quot;(range 3 4)&quot;, :offset 10, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn tester\n  [start end]\n  (let [tile-map-ref (get-in world [:enviroment :landmasses :pool])\n        [xs ys] start\n        [xe ye] end\n        [[xstart xend] range-x [ystart yend] range-y] (range-finder start end)]\n    (vec (for [x (range xs (+ 1 xe))]\n           (vec (for [y (range ys (+ 1 ye))\n                      :let [tile (get @tile-map-ref [x y])]\n                      :when tile]\n                  (if (:taken? tile)\n                    1\n                    0)))))))&quot;, :offset 480, :ns &quot;path-finder.tools&quot;} {:command &quot;(tester [0 0] [3 3])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&gt; xs xe) {:range-x [xe (+ 1 xs)]\n                               :point-h :right}\n                              {:range-x [xs (+ 1 xe)]\n                               :point-h :left})\n\n        range-y (if (&gt; ys ye) {:range-y [ye (+ 1 ys)]\n                               :point-v :down}\n                              {:range-y [ys (+ 1 ye)]\n                               :point-v :up})]\n    (conj range-x range-y)))&quot;, :offset 510, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 0] [3 3])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 3] [3 1])&quot;, :offset 18, :ns &quot;path-finder.tools&quot;} {:command &quot;(&gt; 0 3)&quot;, :offset 6, :ns &quot;path-finder.tools&quot;} {:command &quot;(defn range-finder\n  [start end]\n  (let [[xs ys] start\n        [xe ye] end\n        range-x (if (&gt; xs xe) {:range-x [xe (+ 1 xs)]\n                               :point-h :right}\n                              {:range-x [xs (+ 1 xe)]\n                               :point-h :left})\n\n        range-y (if (&gt; ys ye) {:range-y [ye (+ 1 ys)]\n                               :point-v :up}\n                              {:range-y [ys (+ 1 ye)]\n                               :point-v :down})]\n    (conj range-x range-y)))&quot;, :offset 510, :ns &quot;path-finder.tools&quot;} {:command &quot;(range-finder [0 0] [3 1])&quot;, :offset 24, :ns &quot;path-finder.tools&quot;} {:command &quot;(get-path [0 0] [3 4])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [0 0] [3 3])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;@(get-in world [:enviroment :landmasses :pool])&quot;, :offset 47, :ns &quot;path-finder.a-star&quot;} {:command &quot;(init-world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(get @(get-in world [:enviroment :landmasses :pool]) [3 4])&quot;, :offset 57, :ns &quot;path-finder.a-star&quot;} {:command &quot;e&quot;, :offset 1, :ns &quot;path-finder.a-star&quot;} {:command &quot;(def tester {[0 0] {:name \&quot;peter\&quot;}\n             [2 3] {:name \&quot;grethe\&quot;}})&quot;, :offset 68, :ns &quot;path-finder.a-star&quot;} {:command &quot;(keys tester)&quot;, :offset 0, :ns &quot;path-finder.a-star&quot;} {:command &quot;(init world)&quot;, :offset 11, :ns &quot;world-sim.simulate&quot;} {:command &quot;(get-path [1 1] [3 3])&quot;, :offset 19, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-path [0 0] [4 4])&quot;, :offset 20, :ns &quot;path-finder.a-star&quot;} {:command &quot;(get-in world :physics :world-height)&quot;, :offset 37, :ns &quot;world-sim.simulate&quot;} {:command &quot;(init-world world)&quot;, :offset 17, :ns &quot;world-sim.simulate&quot;} {:command &quot;(get-path [0 0] [455 300])&quot;, :offset 24, :ns &quot;path-finder.a-star&quot;} {:command &quot;(start-producers maps/world)&quot;, :offset 27, :ns &quot;world-sim.simulate&quot;} {:command &quot;(def tester {:sun {}})&quot;, :offset 20, :ns &quot;world-sim.core&quot;} {:command &quot;(conj [] \&quot;somelog\&quot;)&quot;, :offset 17, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt;&gt; \&quot;somelog\&quot; \n     (conj []))&quot;, :offset 30, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt;&gt; [] \n     (conj \&quot;somelog\&quot;)\n     (conj \&quot;somelog\&quot;))&quot;, :offset 52, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; [] \n     (conj \&quot;somelog\&quot;)\n     (conj \&quot;somelog\&quot;))&quot;, :offset 3, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; [] \n     (conj \&quot;somelog\&quot;)\n     (conj \&quot;somelog1\&quot;))&quot;, :offset 50, :ns &quot;world-sim.core&quot;} {:command &quot;(log-entity-produce\n  {:system {:log {}}} {:class-name :sun} {:id :peter} nil nil)&quot;, :offset 81, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-entity-produce\n  {:system {:log (ref {})}} {:class-name :sun} {:id :peter} nil nil)&quot;, :offset 41, :ns &quot;world-sim.logs&quot;} {:command &quot;{:system {:log (atom {})}} {:class-name :sun} {:id :peter} nil nil&quot;, :offset 66, :ns &quot;world-sim.logs&quot;} {:command &quot;(get-in {:system :log (atom {})} [:system :log])&quot;, :offset 29, :ns &quot;world-sim.logs&quot;} {:command &quot;(get-in {:system {:log (atom {})}} [:system :log])&quot;, :offset 18, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-entity-produce\n  {:system {:log (atom {})}} {:class-name :sun} {:id :peter} nil nil)&quot;, :offset 89, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-entity-produce\n  {:system {:log (atom {})} :physics {:time (atom 0)}} {:class-name :sun} {:id :peter} nil nil)&quot;, :offset 36, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-thread world-sim.mock-maps/world \&quot;c3po\&quot; Exception)&quot;, :offset 54, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-thread world-sim.mock-maps/world \&quot;c3po\&quot; RuntimeException)&quot;, :offset 61, :ns &quot;world-sim.logs&quot;} {:command &quot;(log-thread world-sim.mock-maps/world \&quot;c3po\&quot; \&quot;sum exception\&quot;)&quot;, :offset 59, :ns &quot;world-sim.logs&quot;} {:command &quot;(cond 3\n      (= 3) (println \&quot;true\&quot;))&quot;, :offset 37, :ns &quot;world-sim.logs&quot;} {:command &quot;(cond 3 \n      (= 3 %) (println \&quot;true\&quot;))&quot;, :offset 20, :ns &quot;world-sim.logs&quot;} {:command &quot;(cond 3 \n      (= 3 3) (println \&quot;true\&quot;))&quot;, :offset 21, :ns &quot;world-sim.logs&quot;} {:command &quot;(cond\n      (= 3 3) (println \&quot;true\&quot;))&quot;, :offset 5, :ns &quot;world-sim.logs&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    )&quot;, :offset 56, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :horse\n    deref)&quot;, :offset 72, :ns &quot;world-sim.simulate&quot;} {:command &quot;()&quot;, :offset 1} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :oak\n    :pool\n    deref\n    count)&quot;, :offset 84, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :birch\n    :pool\n    deref\n    count)&quot;, :offset 56, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :gaia\n    :trees\n    :pool\n    :elm\n    :pool\n    deref\n    count)&quot;, :offset 54, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :elm\n    deref)&quot;, :offset 70, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref)&quot;, :offset 60, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :birch\n    deref)&quot;, :offset 62, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs)&quot;, :offset 36, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    type)&quot;, :offset 45, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    count)&quot;, :offset 46, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    vals)&quot;, :offset 45, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :threads)&quot;, :offset 49, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :threads\n    deref)&quot;, :offset 59, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    keys)&quot;, :offset 60, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    first)&quot;, :offset 80, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    last\n    (dissoc :class))&quot;, :offset 79, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    keys\n    first)&quot;, :offset 89, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    keys)&quot;, :offset 79, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    (nth 20000))&quot;, :offset 85, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    (nth 20000)\n    (dissoc :class))&quot;, :offset 105, :ns &quot;world-sim.simulate&quot;} {:command &quot;(conj [] 1)&quot;, :offset 10, :ns &quot;world-sim.core&quot;} {:command &quot;d&quot;, :offset 1, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; conj [] 1)&quot;, :offset 14, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; 1\n  (conj []))&quot;, :offset 18, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; 1\n  (conj [])\n    (conj []))&quot;, :offset 26, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; []\n  (conj 1)\n    (conj 1))&quot;, :offset 29, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; '()\n  (conj 1)\n    (conj 1))&quot;, :offset 5, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; '()\n  (conj 1)\n    (conj 1)\n    (conj 2))&quot;, :offset 43, :ns &quot;world-sim.core&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    (nth 1)\n    (dissoc :class))&quot;, :offset 81, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    first\n    (dissoc :class))&quot;, :offset 99, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    )&quot;, :offset 75, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :consumers\n    :oak\n    deref\n    count)&quot;, :offset 80, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :exceptions)&quot;, :offset 52, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :exceptions\n    deref)&quot;, :offset 62, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    deref)&quot;, :offset 51, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers)&quot;, :offset 52, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :oak\n    deref\n    count)&quot;, :offset 80, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :birch\n    deref\n    count)&quot;, :offset 62, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :producers\n    :elm\n    deref\n    count)&quot;, :offset 60, :ns &quot;world-sim.simulate&quot;} {:command &quot;(-&gt; maps/world\n    :system\n    :logs\n    :exceptions\n    deref\n    count)&quot;, :offset 52, :ns &quot;world-sim.simulate&quot;} {:command &quot;(run)&quot;, :offset 4, :ns &quot;world-sim.simulate&quot;} {:command &quot;(show-window)&quot;, :offset 12, :ns &quot;world-sim.simulate&quot;}], :remote []}}</component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -340,6 +344,8 @@
       <workItem from="1570124735663" duration="3926000" />
       <workItem from="1570207795937" duration="2719000" />
       <workItem from="1570433159037" duration="3265000" />
+      <workItem from="1570519402545" duration="820000" />
+      <workItem from="1570608897917" duration="2570000" />
     </task>
     <task id="LOCAL-00001" summary="first commit ??">
       <created>1565368262944</created>
@@ -401,13 +407,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138511000" />
+    <option name="totallyTimeSpent" value="141901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14583333" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1982527" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -438,7 +443,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info active="true" anchor="right" x="0" y="23" width="1536" height="841" id="REPL" order="9" side_tool="true" visible="true" weight="0.37432796" />
+      <window_info active="true" anchor="right" x="0" y="23" width="1536" height="841" id="REPL" order="9" side_tool="true" visible="true" weight="0.3877688" />
       <window_info anchor="right" id="make" order="10" />
     </layout>
   </component>
@@ -532,24 +537,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/screen.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fsm/state.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fsm/behavior.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
         </state>
       </provider>
     </entry>
@@ -567,13 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fsm/fsm_actions.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/world_sim/world_loop.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -581,10 +565,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/events_walkers.clj">
+    <entry file="file://$PROJECT_DIR$/src/world_sim/logs.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/mock_maps.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2533">
+          <caret line="149" column="38" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/actions.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/producer.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -597,64 +602,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/world_sim/init.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        <state relative-caret-position="427">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/producer.clj">
+    <entry file="file://$PROJECT_DIR$/src/ui/screen.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/consumer.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/actions.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/logs.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/mock_maps.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="149" column="38" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world_sim/events.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="35" column="62" lean-forward="true" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        <state relative-caret-position="308">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/world_sim/simulate.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        <state relative-caret-position="357">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fsm/behavior.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/events_walkers.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fsm/fsm_actions.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/consumer.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/world_sim/tools.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="160" column="2" lean-forward="true" selection-start-line="160" selection-start-column="2" selection-end-line="160" selection-end-column="2" />
+        <state relative-caret-position="243">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/world_sim/events.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
         </state>
       </provider>
     </entry>

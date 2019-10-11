@@ -9,7 +9,7 @@
 
 (declare input)
 
-(defn fsm-fn-runner
+#_(defn fsm-fn-runner
   [world action {:keys [entity-id entity-class]}]
   (loop [events-list (:events action)
          status true]
@@ -53,6 +53,15 @@
       (swap! entity-pool (fn [_] entity-pool-new))
       nil)
     (:func-return result-map)))
+
+#_(defn input
+  [world entity-class entity f res-before]
+  (let [entity-pool (:pool entity-class)]
+    (swap! entity-pool (fn [_] (let [result-map (f world entity-class entity res-before) ;;should return a map in future yea? yea!
+                                     entity-new (:entity-new result-map)
+                                     entity-pool (:pool (:entity-class result-map))
+                                     entity-pool-new (conditional-map-func entity-pool entity-new (:opt result-map))]
+                                 entity-pool-new)))))
 
 #_(defn input
   "This function is supposed to only change atoms when in the lambda function in a swap.
