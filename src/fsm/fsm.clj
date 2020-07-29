@@ -29,3 +29,10 @@
   `(while (not= (deref ~s) ~c)
      ~@body
      (update-state ~s)))
+
+(println "helooo")
+
+(println "oooohh yesssss")
+
+
+(println "tadaa")

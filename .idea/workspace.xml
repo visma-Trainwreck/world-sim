@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e61c451f-b719-46b4-8591-b9f2dc22f69a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/screen.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/screen.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_sim/init.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/init.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_sim/logs.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/logs.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_sim/tools.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_sim/tools.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fsm/fsm.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/fsm/fsm.clj" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/default/" />
@@ -20,93 +17,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/simulate.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fsm/fsm_actions.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/tools.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fsm/behavior.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/events_walkers.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/screen.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/consumer.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/events.clj">
+        <entry file="file://$PROJECT_DIR$/src/fsm/fsm.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/fsm_events_walker.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world_sim/init.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="612">
+              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -147,7 +63,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/world_sim/a_star.clj" />
         <option value="$PROJECT_DIR$/src/fsm/utils.clj" />
-        <option value="$PROJECT_DIR$/src/fsm/fsm.clj" />
         <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/actions_walkers.clj" />
         <option value="$PROJECT_DIR$/src/fsm/fsm_guards.clj" />
@@ -169,6 +84,7 @@
         <option value="$PROJECT_DIR$/src/ui/screen.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/init.clj" />
         <option value="$PROJECT_DIR$/src/world_sim/tools.clj" />
+        <option value="$PROJECT_DIR$/src/fsm/fsm.clj" />
       </list>
     </option>
   </component>
@@ -183,7 +99,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -207,22 +122,18 @@
               <item name="world_sim" type="b2602c69:ProjectViewProjectNode" />
               <item name="world_sim" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="world_sim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="world_sim" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="world_sim" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="cursive.last.file.extension.C\:/Users/peter.l.rasmussen/Documents/project/world_sim/src" value="clj" />
@@ -403,14 +314,29 @@
       <option name="project" value="LOCAL" />
       <updated>1570031809514</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add heloooo">
+      <created>1596020443922</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596020443922</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add ooh nooooo">
+      <created>1596020505270</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1596020505270</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141901000" />
+    <option name="totallyTimeSpent" value="142047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.1982527" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -443,7 +369,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info active="true" anchor="right" x="0" y="23" width="1536" height="841" id="REPL" order="9" side_tool="true" visible="true" weight="0.3877688" />
+      <window_info active="true" anchor="right" x="0" y="23" width="1536" height="841" id="REPL" order="9" side_tool="true" visible="true" weight="0.32325268" />
       <window_info anchor="right" id="make" order="10" />
     </layout>
   </component>
@@ -458,7 +384,9 @@
     <MESSAGE value="FSM is now THE entity which makes it easier to pass to tilakone" />
     <MESSAGE value="added more functions to behavior fsm&#10;started tile improvements" />
     <MESSAGE value="Morten just came in, took the keyboard and danced that thing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Morten just came in, took the keyboard and danced that thing" />
+    <MESSAGE value="Add heloooo" />
+    <MESSAGE value="Add ooh nooooo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ooh nooooo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -485,13 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1683">
           <caret line="99" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fsm/fsm.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -602,8 +523,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/world_sim/init.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="536">
+          <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -660,6 +581,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fsm/fsm.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
         </state>
       </provider>
     </entry>
